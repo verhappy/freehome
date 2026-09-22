@@ -6,59 +6,19 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - hellok
   type: vless
-  server: 5.129.238.144
-  port: 8443
+  server: 147.45.175.81
+  port: 443
   uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xinnusvpn.duckdns.org
+  servername: xsru2.freeddns.org
   network: ws
   ws-opts:
-    path: /wsnl
+    path: /wsru
     headers:
-      Host: xinnusvpn.duckdns.org
+      Host: xsru2.freeddns.org
 - name: 🇷🇺 俄罗斯 (Russia) 02 - hellok
-  type: vless
-  server: 104.18.46.254
-  port: 443
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 03 - hellok
-  type: vless
-  server: 104.18.46.234
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tlssecurity=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 04 - hellok
-  type: vless
-  server: 162.159.0.169
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 05 - hellok
   type: vless
   server: 46.8.200.91
   port: 443
@@ -79,9 +39,6 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - hellok
   - 🇷🇺 俄罗斯 (Russia) 02 - hellok
-  - 🇷🇺 俄罗斯 (Russia) 03 - hellok
-  - 🇷🇺 俄罗斯 (Russia) 04 - hellok
-  - 🇷🇺 俄罗斯 (Russia) 05 - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -89,8 +46,5 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - hellok
   - 🇷🇺 俄罗斯 (Russia) 02 - hellok
-  - 🇷🇺 俄罗斯 (Russia) 03 - hellok
-  - 🇷🇺 俄罗斯 (Russia) 04 - hellok
-  - 🇷🇺 俄罗斯 (Russia) 05 - hellok
 rules:
 - MATCH,PROXIES
