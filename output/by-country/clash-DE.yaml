@@ -1,0 +1,254 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇩🇪 德国 (Germany) 01 - hellok
+  type: vless
+  server: 164.90.217.130
+  port: 443
+  uuid: 8525fe74-67e6-4a55-8a26-95f227bd1384
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: white-forest-2c01.alvlirm222.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: white-forest-2c01.alvlirm222.workers.dev
+- name: 🇩🇪 德国 (Germany) 02 - hellok
+  type: vless
+  server: 81.95.4.189
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
+- name: 🇩🇪 德国 (Germany) 03 - hellok
+  type: vless
+  server: 46.101.253.244
+  port: 2083
+  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edge.yzkvm.top
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edge.yzkvm.top
+- name: 🇩🇪 德国 (Germany) 04 - hellok
+  type: ss
+  server: jgzt1997.qivfelo.ir
+  port: 58965
+  cipher: chacha20-ietf-poly1305
+  password: DfokaAndibyl-wXjoVex_zDT78r-kwmX
+  udp: true
+- name: 🇩🇪 德国 (Germany) 05 - hellok
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 06 - hellok
+  type: vless
+  server: 103.200.28.113
+  port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇩🇪 德国 (Germany) 07 - hellok
+  type: vless
+  server: 103.228.168.182
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇩🇪 德国 (Germany) 08 - hellok
+  type: vmess
+  server: kentspark.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: ''
+- name: 🇩🇪 德国 (Germany) 09 - hellok
+  type: vless
+  server: 64.226.95.244
+  port: 2096
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cf3.schzyc.cc.cd
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cf3.schzyc.cc.cd
+- name: 🇩🇪 德国 (Germany) 10 - hellok
+  type: vmess
+  server: 216.106.187.60
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 11 - hellok
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇩🇪 德国 (Germany) 12 - hellok
+  type: ss
+  server: jgzt1997.qivfelo.ir
+  port: 5069
+  cipher: chacha20-ietf-poly1305
+  password: DfokaAndibyl-wXjoVex_zDT78r-kwmX
+  udp: true
+- name: 🇩🇪 德国 (Germany) 13 - hellok
+  type: vless
+  server: 167.172.165.106
+  port: 2083
+  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edge.yzkvm.top
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edge.yzkvm.top
+- name: 🇩🇪 德国 (Germany) 14 - hellok
+  type: vmess
+  server: aidrivercat.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: aidrivercat.org
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: aidrivercat.org
+- name: 🇩🇪 德国 (Germany) 15 - hellok
+  type: vless
+  server: 172.67.130.159
+  port: 2096
+  uuid: 735b8344-0b95-464c-b687-1c5616138908
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn-de.skyvora.app
+  network: ws
+  ws-opts:
+    path: /3cagtz3
+    headers:
+      Host: cdn-de.skyvora.app
+- name: 🇩🇪 德国 (Germany) 16 - hellok
+  type: ss
+  server: 2.58.81.221
+  port: 80
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+  udp: true
+- name: 🇩🇪 德国 (Germany) 17 - hellok
+  type: ss
+  server: 209.46.102.22
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 1hhrqrokj3ag
+  udp: true
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇩🇪 德国 (Germany) 01 - hellok
+  - 🇩🇪 德国 (Germany) 02 - hellok
+  - 🇩🇪 德国 (Germany) 03 - hellok
+  - 🇩🇪 德国 (Germany) 04 - hellok
+  - 🇩🇪 德国 (Germany) 05 - hellok
+  - 🇩🇪 德国 (Germany) 06 - hellok
+  - 🇩🇪 德国 (Germany) 07 - hellok
+  - 🇩🇪 德国 (Germany) 08 - hellok
+  - 🇩🇪 德国 (Germany) 09 - hellok
+  - 🇩🇪 德国 (Germany) 10 - hellok
+  - 🇩🇪 德国 (Germany) 11 - hellok
+  - 🇩🇪 德国 (Germany) 12 - hellok
+  - 🇩🇪 德国 (Germany) 13 - hellok
+  - 🇩🇪 德国 (Germany) 14 - hellok
+  - 🇩🇪 德国 (Germany) 15 - hellok
+  - 🇩🇪 德国 (Germany) 16 - hellok
+  - 🇩🇪 德国 (Germany) 17 - hellok
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 (Germany) 01 - hellok
+  - 🇩🇪 德国 (Germany) 02 - hellok
+  - 🇩🇪 德国 (Germany) 03 - hellok
+  - 🇩🇪 德国 (Germany) 04 - hellok
+  - 🇩🇪 德国 (Germany) 05 - hellok
+  - 🇩🇪 德国 (Germany) 06 - hellok
+  - 🇩🇪 德国 (Germany) 07 - hellok
+  - 🇩🇪 德国 (Germany) 08 - hellok
+  - 🇩🇪 德国 (Germany) 09 - hellok
+  - 🇩🇪 德国 (Germany) 10 - hellok
+  - 🇩🇪 德国 (Germany) 11 - hellok
+  - 🇩🇪 德国 (Germany) 12 - hellok
+  - 🇩🇪 德国 (Germany) 13 - hellok
+  - 🇩🇪 德国 (Germany) 14 - hellok
+  - 🇩🇪 德国 (Germany) 15 - hellok
+  - 🇩🇪 德国 (Germany) 16 - hellok
+  - 🇩🇪 德国 (Germany) 17 - hellok
+rules:
+- MATCH,PROXIES

@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇧🇪 BE 01 - hellok",
+        "🇧🇪 BE 02 - hellok",
+        "🇧🇪 BE 03 - hellok",
+        "🇧🇪 BE 04 - hellok"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇧🇪 BE 01 - hellok",
+        "🇧🇪 BE 02 - hellok",
+        "🇧🇪 BE 03 - hellok",
+        "🇧🇪 BE 04 - hellok"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
