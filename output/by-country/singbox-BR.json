@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇬 BG 01 - hellok"
+        "🇧🇷 BR 01 - hellok",
+        "🇧🇷 BR 02 - hellok"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇬 BG 01 - hellok"
+        "🇧🇷 BR 01 - hellok",
+        "🇧🇷 BR 02 - hellok"
       ],
       "url": "https://www.google.com/generate_204"
     },
