@@ -6,14 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇿 UZ 01 - hellok"
+        "🇺🇿 UZ 01 - hellok",
+        "🇺🇿 UZ 02 - hellok",
+        "🇺🇿 UZ 03 - hellok",
+        "🇺🇿 UZ 04 - hellok"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇿 UZ 01 - hellok"
+        "🇺🇿 UZ 01 - hellok",
+        "🇺🇿 UZ 02 - hellok",
+        "🇺🇿 UZ 03 - hellok",
+        "🇺🇿 UZ 04 - hellok"
       ],
       "url": "https://www.google.com/generate_204"
     },
