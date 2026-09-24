@@ -4,33 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇫🇮 FI 01 - hellok
+- name: 🇿🇦 ZA 01 - hellok
   type: ss
-  server: p1tun4.greewebservices.ir
-  port: 1080
+  server: 139.84.247.164
+  port: 8388
   cipher: chacha20-ietf-poly1305
-  password: cVvgP0Bz69hsErPBvqKbwQ
+  password: tfAcRikawhNoZAhu
   udp: true
-- name: 🇫🇮 FI 02 - hellok
+- name: 🇿🇦 ZA 02 - hellok
   type: ss
-  server: p1tun2.greewebservices.ir
-  port: 2060
+  server: 102.37.156.224
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: cVvgP0Bz69hsErPBvqKbwQ
+  password: aduB9HGxQHjA2SBMRjkHX6
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇫🇮 FI 01 - hellok
-  - 🇫🇮 FI 02 - hellok
+  - 🇿🇦 ZA 01 - hellok
+  - 🇿🇦 ZA 02 - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇮 FI 01 - hellok
-  - 🇫🇮 FI 02 - hellok
+  - 🇿🇦 ZA 01 - hellok
+  - 🇿🇦 ZA 02 - hellok
 rules:
 - MATCH,PROXIES

@@ -15,69 +15,25 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 02 - hellok
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 03 - hellok
-  type: ss
-  server: ehwn62tnx5g8.cdn000.com
-  port: 30204
-  cipher: 2022-blake3-aes-128-gcm
-  password: Y2FkNzhhZWQ0MzA1NzlhZA==:NGMxZWEyZDMtZjBiMS00Yw==
-  udp: true
-- name: 🇯🇵 日本 (Japan) 04 - hellok
-  type: vless
-  server: 104.21.33.59
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 05 - hellok
   type: ss
   server: 149.22.87.204
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 🇯🇵 日本 (Japan) 06 - hellok
-  type: ss
-  server: 149.22.87.240
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 07 - hellok
+- name: 🇯🇵 日本 (Japan) 03 - hellok
   type: vless
-  server: 172.67.156.147
+  server: 34.84.126.188
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: 51a43b75-c84b-46eb-885e-c24e7819cd0b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 08 - hellok
+  reality-opts:
+    public-key: qMPnrSiXgWvw2ETefb46OfJKnYpfX6HfyGdWpWWxtVI
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 04 - hellok
   type: vless
   server: 34.84.126.188
   port: 443
@@ -89,64 +45,7 @@ proxies:
     public-key: qMPnrSiXgWvw2ETefb46OfJKnYpfX6HfyGdWpWWxtVI
   servername: www.cloudflare.com
   client-fingerprint: qq
-- name: 🇯🇵 日本 (Japan) 09 - hellok
-  type: vless
-  server: 172.67.217.240
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 10 - hellok
-  type: vless
-  server: 162.159.254.3
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 11 - hellok
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 12 - hellok
-  type: ss
-  server: 84.247.155.196
-  port: 80
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: 🇯🇵 日本 (Japan) 13 - hellok
-  type: vless
-  server: 34.84.126.188
-  port: 443
-  uuid: 51a43b75-c84b-46eb-885e-c24e7819cd0b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: qMPnrSiXgWvw2ETefb46OfJKnYpfX6HfyGdWpWWxtVI
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 14 - hellok
+- name: 🇯🇵 日本 (Japan) 05 - hellok
   type: vmess
   server: or.521166.xyz
   port: 2083
@@ -162,9 +61,87 @@ proxies:
     path: /or3
     headers:
       Host: ''
-- name: 🇯🇵 日本 (Japan) 15 - hellok
+- name: 🇯🇵 日本 (Japan) 06 - hellok
   type: vless
-  server: 162.159.254.3
+  server: 34.84.126.188
+  port: 443
+  uuid: 51a43b75-c84b-46eb-885e-c24e7819cd0b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: qMPnrSiXgWvw2ETefb46OfJKnYpfX6HfyGdWpWWxtVI
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 07 - hellok
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 08 - hellok
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 09 - hellok
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 10 - hellok
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 11 - hellok
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 12 - hellok
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 13 - hellok
+  type: vless
+  server: 34.84.126.188
+  port: 443
+  uuid: 51a43b75-c84b-46eb-885e-c24e7819cd0b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: qMPnrSiXgWvw2ETefb46OfJKnYpfX6HfyGdWpWWxtVI
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 14 - hellok
+  type: vless
+  server: 104.21.33.59
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -176,7 +153,31 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 15 - hellok
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 16 - hellok
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 17 - hellok
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 18 - hellok
   type: vmess
   server: 45.32.57.118
   port: 4433
@@ -186,34 +187,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 17 - hellok
-  type: ss
-  server: 84.247.155.196
-  port: 443
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: 🇯🇵 日本 (Japan) 18 - hellok
-  type: vless
-  server: 34.84.126.188
-  port: 443
-  uuid: 51a43b75-c84b-46eb-885e-c24e7819cd0b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: qMPnrSiXgWvw2ETefb46OfJKnYpfX6HfyGdWpWWxtVI
-  servername: www.cloudflare.com
-  client-fingerprint: edge
 - name: 🇯🇵 日本 (Japan) 19 - hellok
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 20 - hellok
   type: vless
   server: 34.84.126.188
   port: 443
@@ -225,119 +199,28 @@ proxies:
     public-key: qMPnrSiXgWvw2ETefb46OfJKnYpfX6HfyGdWpWWxtVI
   servername: www.cloudflare.com
   client-fingerprint: ios
-- name: 🇯🇵 日本 (Japan) 21 - hellok
+- name: 🇯🇵 日本 (Japan) 20 - hellok
   type: ss
-  server: 149.22.87.241
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  server: 84.247.155.196
+  port: 80
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
   udp: true
-- name: 🇯🇵 日本 (Japan) 22 - hellok
-  type: vless
-  server: 104.21.70.21
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 23 - hellok
+- name: 🇯🇵 日本 (Japan) 21 - hellok
   type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  server: 64.176.51.214
+  port: 23462
+  uuid: 95c5abc1-018d-4628-89a7-25ab9c62ab74
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 24 - hellok
-  type: vless
-  server: 104.21.70.21
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /a15206
     headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 25 - hellok
-  type: vless
-  server: 172.67.217.240
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 26 - hellok
-  type: vless
-  server: 172.67.156.147
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 27 - hellok
-  type: vless
-  server: 172.67.217.240
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 28 - hellok
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 29 - hellok
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 30 - hellok
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
+      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -364,15 +247,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 19 - hellok
   - 🇯🇵 日本 (Japan) 20 - hellok
   - 🇯🇵 日本 (Japan) 21 - hellok
-  - 🇯🇵 日本 (Japan) 22 - hellok
-  - 🇯🇵 日本 (Japan) 23 - hellok
-  - 🇯🇵 日本 (Japan) 24 - hellok
-  - 🇯🇵 日本 (Japan) 25 - hellok
-  - 🇯🇵 日本 (Japan) 26 - hellok
-  - 🇯🇵 日本 (Japan) 27 - hellok
-  - 🇯🇵 日本 (Japan) 28 - hellok
-  - 🇯🇵 日本 (Japan) 29 - hellok
-  - 🇯🇵 日本 (Japan) 30 - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -399,14 +273,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 19 - hellok
   - 🇯🇵 日本 (Japan) 20 - hellok
   - 🇯🇵 日本 (Japan) 21 - hellok
-  - 🇯🇵 日本 (Japan) 22 - hellok
-  - 🇯🇵 日本 (Japan) 23 - hellok
-  - 🇯🇵 日本 (Japan) 24 - hellok
-  - 🇯🇵 日本 (Japan) 25 - hellok
-  - 🇯🇵 日本 (Japan) 26 - hellok
-  - 🇯🇵 日本 (Japan) 27 - hellok
-  - 🇯🇵 日本 (Japan) 28 - hellok
-  - 🇯🇵 日本 (Japan) 29 - hellok
-  - 🇯🇵 日本 (Japan) 30 - hellok
 rules:
 - MATCH,PROXIES
