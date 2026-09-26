@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇰🇷 韩国 (South Korea) 01 - hellok",
+        "🇰🇷 韩国 (South Korea) 02 - hellok",
+        "🇰🇷 韩国 (South Korea) 03 - hellok",
+        "🇰🇷 韩国 (South Korea) 04 - hellok",
+        "🇰🇷 韩国 (South Korea) 05 - hellok",
+        "🇰🇷 韩国 (South Korea) 06 - hellok",
+        "🇰🇷 韩国 (South Korea) 07 - hellok",
+        "🇰🇷 韩国 (South Korea) 08 - hellok",
+        "🇰🇷 韩国 (South Korea) 09 - hellok",
+        "🇰🇷 韩国 (South Korea) 10 - hellok",
+        "🇰🇷 韩国 (South Korea) 11 - hellok",
+        "🇰🇷 韩国 (South Korea) 12 - hellok",
+        "🇰🇷 韩国 (South Korea) 13 - hellok"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇰🇷 韩国 (South Korea) 01 - hellok",
+        "🇰🇷 韩国 (South Korea) 02 - hellok",
+        "🇰🇷 韩国 (South Korea) 03 - hellok",
+        "🇰🇷 韩国 (South Korea) 04 - hellok",
+        "🇰🇷 韩国 (South Korea) 05 - hellok",
+        "🇰🇷 韩国 (South Korea) 06 - hellok",
+        "🇰🇷 韩国 (South Korea) 07 - hellok",
+        "🇰🇷 韩国 (South Korea) 08 - hellok",
+        "🇰🇷 韩国 (South Korea) 09 - hellok",
+        "🇰🇷 韩国 (South Korea) 10 - hellok",
+        "🇰🇷 韩国 (South Korea) 11 - hellok",
+        "🇰🇷 韩国 (South Korea) 12 - hellok",
+        "🇰🇷 韩国 (South Korea) 13 - hellok"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
