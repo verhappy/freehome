@@ -6,9 +6,9 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - hellok
   type: vless
-  server: a2.arshia-nova.ir
+  server: k2.cloud--vpn.site
   port: 443
-  uuid: 9ccf8612-5e16-4b16-834e-4df5fe3611cd
+  uuid: 5b8ce557-47d6-4a57-ada2-097a795a6d19
   udp: true
   tls: true
   skip-cert-verify: true
@@ -18,103 +18,17 @@ proxies:
     path: /
     headers:
       Host: c12.com
-- name: 🇫🇮 FI 02 - hellok
-  type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: 9ccf8612-5e16-4b16-834e-4df5fe3611cd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 03 - hellok
-  type: vless
-  server: 185.79.138.71
-  port: 448
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-  servername: www.samsung.com
-  client-fingerprint: random
-- name: 🇫🇮 FI 04 - hellok
-  type: vless
-  server: 185.79.138.71
-  port: 448
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 05 - hellok
-  type: vless
-  server: 185.79.138.71
-  port: 448
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-  servername: www.samsung.com
-  client-fingerprint: qq
-- name: 🇫🇮 FI 06 - hellok
-  type: vless
-  server: 185.79.138.71
-  port: 448
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-  servername: www.samsung.com
-  client-fingerprint: firefox
-- name: 🇫🇮 FI 07 - hellok
-  type: vless
-  server: 185.79.138.71
-  port: 448
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-  servername: www.samsung.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇫🇮 FI 01 - hellok
-  - 🇫🇮 FI 02 - hellok
-  - 🇫🇮 FI 03 - hellok
-  - 🇫🇮 FI 04 - hellok
-  - 🇫🇮 FI 05 - hellok
-  - 🇫🇮 FI 06 - hellok
-  - 🇫🇮 FI 07 - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇫🇮 FI 01 - hellok
-  - 🇫🇮 FI 02 - hellok
-  - 🇫🇮 FI 03 - hellok
-  - 🇫🇮 FI 04 - hellok
-  - 🇫🇮 FI 05 - hellok
-  - 🇫🇮 FI 06 - hellok
-  - 🇫🇮 FI 07 - hellok
 rules:
 - MATCH,PROXIES
