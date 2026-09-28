@@ -6,10 +6,10 @@ log-level: info
 proxies:
 - name: 🇿🇦 ZA 01 - hellok
   type: ss
-  server: 20.164.220.189
-  port: 443
+  server: 139.84.247.164
+  port: 8388
   cipher: chacha20-ietf-poly1305
-  password: UbkyrKvOtfSd2xQb
+  password: tfAcRikawhNoZAhu
   udp: true
 - name: 🇿🇦 ZA 02 - hellok
   type: ss
@@ -20,10 +20,10 @@ proxies:
   udp: true
 - name: 🇿🇦 ZA 03 - hellok
   type: ss
-  server: 139.84.247.164
-  port: 8388
+  server: 20.164.220.189
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: tfAcRikawhNoZAhu
+  password: UbkyrKvOtfSd2xQb
   udp: true
 proxy-groups:
 - name: PROXIES
