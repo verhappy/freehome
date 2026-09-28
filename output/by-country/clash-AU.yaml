@@ -13,17 +13,65 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 172.105.169.70
+- name: 🇦🇺 澳大利亚 (Australia) 02 - hellok
+  type: vless
+  server: 172.67.73.170
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇦🇺 澳大利亚 (Australia) 03 - hellok
+  type: vless
+  server: 172.67.73.170
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇦🇺 澳大利亚 (Australia) 04 - hellok
+  type: vless
+  server: 172.67.73.170
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇦🇺 澳大利亚 (Australia) 01 - hellok
+  - 🇦🇺 澳大利亚 (Australia) 02 - hellok
+  - 🇦🇺 澳大利亚 (Australia) 03 - hellok
+  - 🇦🇺 澳大利亚 (Australia) 04 - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇦🇺 澳大利亚 (Australia) 01 - hellok
+  - 🇦🇺 澳大利亚 (Australia) 02 - hellok
+  - 🇦🇺 澳大利亚 (Australia) 03 - hellok
+  - 🇦🇺 澳大利亚 (Australia) 04 - hellok
 rules:
 - MATCH,PROXIES

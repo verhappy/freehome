@@ -5,15 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - hellok
-  type: vmess
-  server: 47.250.135.244
-  port: 10000
-  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: platform118.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform118
+    headers:
+      Host: platform118.halalkhor.info
 - name: 🇲🇾 MY 02 - hellok
   type: vmess
   server: 47.250.135.244
@@ -34,6 +37,120 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇲🇾 MY 04 - hellok
+  type: vless
+  server: platform106.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform106
+    headers:
+      Host: platform106.halalkhor.info
+- name: 🇲🇾 MY 05 - hellok
+  type: vless
+  server: platform128.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform128
+    headers:
+      Host: platform128.halalkhor.info
+- name: 🇲🇾 MY 06 - hellok
+  type: vless
+  server: platform108.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform108
+    headers:
+      Host: platform108.halalkhor.info
+- name: 🇲🇾 MY 07 - hellok
+  type: vless
+  server: platform106.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform106
+    headers:
+      Host: platform106.halalkhor.info
+- name: 🇲🇾 MY 08 - hellok
+  type: vless
+  server: platform117.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform117
+    headers:
+      Host: platform117.halalkhor.info
+- name: 🇲🇾 MY 09 - hellok
+  type: vless
+  server: platform108.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform108
+    headers:
+      Host: platform108.halalkhor.info
+- name: 🇲🇾 MY 10 - hellok
+  type: vless
+  server: platform109.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform109
+    headers:
+      Host: '%5B%27platform109.halalkhor.info%27%5D'
+- name: 🇲🇾 MY 11 - hellok
+  type: vless
+  server: platform103.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform103
+    headers:
+      Host: platform103.golnamakcert.top
+- name: 🇲🇾 MY 12 - hellok
+  type: vmess
+  server: 47.250.135.244
+  port: 10000
+  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -42,6 +159,15 @@ proxy-groups:
   - 🇲🇾 MY 01 - hellok
   - 🇲🇾 MY 02 - hellok
   - 🇲🇾 MY 03 - hellok
+  - 🇲🇾 MY 04 - hellok
+  - 🇲🇾 MY 05 - hellok
+  - 🇲🇾 MY 06 - hellok
+  - 🇲🇾 MY 07 - hellok
+  - 🇲🇾 MY 08 - hellok
+  - 🇲🇾 MY 09 - hellok
+  - 🇲🇾 MY 10 - hellok
+  - 🇲🇾 MY 11 - hellok
+  - 🇲🇾 MY 12 - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -50,5 +176,14 @@ proxy-groups:
   - 🇲🇾 MY 01 - hellok
   - 🇲🇾 MY 02 - hellok
   - 🇲🇾 MY 03 - hellok
+  - 🇲🇾 MY 04 - hellok
+  - 🇲🇾 MY 05 - hellok
+  - 🇲🇾 MY 06 - hellok
+  - 🇲🇾 MY 07 - hellok
+  - 🇲🇾 MY 08 - hellok
+  - 🇲🇾 MY 09 - hellok
+  - 🇲🇾 MY 10 - hellok
+  - 🇲🇾 MY 11 - hellok
+  - 🇲🇾 MY 12 - hellok
 rules:
 - MATCH,PROXIES

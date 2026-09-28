@@ -4,23 +4,10 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇪 阿联酋 (UAE) 01 - hellok
+- name: 🇮🇪 IE 01 - hellok
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 02 - hellok
-  type: vless
-  server: 185.112.249.201
-  port: 8443
+  server: 45.141.234.138
+  port: 443
   uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
   tls: true
@@ -31,10 +18,10 @@ proxies:
     path: /
     headers:
       Host: edgetunnel-4uw.pages.dev
-- name: 🇦🇪 阿联酋 (UAE) 03 - hellok
+- name: 🇮🇪 IE 02 - hellok
   type: vless
-  server: 185.112.249.201
-  port: 2053
+  server: 188.114.97.6
+  port: 443
   uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
   tls: true
@@ -42,7 +29,7 @@ proxies:
   servername: edgetunnel-4uw.pages.dev
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome?ed#?ed=512
     headers:
       Host: edgetunnel-4uw.pages.dev
 proxy-groups:
@@ -50,16 +37,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇦🇪 阿联酋 (UAE) 01 - hellok
-  - 🇦🇪 阿联酋 (UAE) 02 - hellok
-  - 🇦🇪 阿联酋 (UAE) 03 - hellok
+  - 🇮🇪 IE 01 - hellok
+  - 🇮🇪 IE 02 - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇪 阿联酋 (UAE) 01 - hellok
-  - 🇦🇪 阿联酋 (UAE) 02 - hellok
-  - 🇦🇪 阿联酋 (UAE) 03 - hellok
+  - 🇮🇪 IE 01 - hellok
+  - 🇮🇪 IE 02 - hellok
 rules:
 - MATCH,PROXIES
