@@ -32,61 +32,6 @@ proxies:
     path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
     headers:
       Host: c12.com
-- name: 🇫🇮 FI 03 - hellok
-  type: ss
-  server: 77.83.247.207
-  port: 18285
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-  udp: true
-- name: 🇫🇮 FI 04 - hellok
-  type: vless
-  server: 185.79.138.71
-  port: 448
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 05 - hellok
-  type: vless
-  server: 185.79.138.71
-  port: 448
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 06 - hellok
-  type: vless
-  server: 185.79.138.71
-  port: 448
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 07 - hellok
-  type: vless
-  server: 185.79.138.71
-  port: 448
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-  servername: www.samsung.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -94,11 +39,6 @@ proxy-groups:
   - AUTO
   - 🇫🇮 FI 01 - hellok
   - 🇫🇮 FI 02 - hellok
-  - 🇫🇮 FI 03 - hellok
-  - 🇫🇮 FI 04 - hellok
-  - 🇫🇮 FI 05 - hellok
-  - 🇫🇮 FI 06 - hellok
-  - 🇫🇮 FI 07 - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -106,10 +46,5 @@ proxy-groups:
   proxies:
   - 🇫🇮 FI 01 - hellok
   - 🇫🇮 FI 02 - hellok
-  - 🇫🇮 FI 03 - hellok
-  - 🇫🇮 FI 04 - hellok
-  - 🇫🇮 FI 05 - hellok
-  - 🇫🇮 FI 06 - hellok
-  - 🇫🇮 FI 07 - hellok
 rules:
 - MATCH,PROXIES
