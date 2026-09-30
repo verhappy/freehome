@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - hellok
+- name: 🇹🇭 TH 01 - hellok
   type: vless
-  server: 172.64.151.134
-  port: 8880
-  uuid: f15a5586-23f6-453f-97f5-c301b949e699
+  server: 103.86.49.57
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /ws
     headers:
-      Host: mute-sunset-0849.40-aeb.workers.dev
+      Host: aIs.SpEeDtEsT.nEt
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - hellok
+  - 🇹🇭 TH 01 - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - hellok
+  - 🇹🇭 TH 01 - hellok
 rules:
 - MATCH,PROXIES
