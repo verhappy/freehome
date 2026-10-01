@@ -6,68 +6,6 @@ log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - hellok
   type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 02 - hellok
-  type: vless
-  server: 89.28.239.234
-  port: 8443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shephe.dpdns.org
-- name: 🇸🇬 新加坡 (Singapore) 03 - hellok
-  type: vless
-  server: 140.245.120.16
-  port: 443
-  uuid: 92d67828-4c56-4795-af5a-f387651380dc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: trackydev.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 140.245.120.16
-- name: 🇸🇬 新加坡 (Singapore) 04 - hellok
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 05 - hellok
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 06 - hellok
-  type: vmess
   server: ww11.levikogjgfdd.ir
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
@@ -76,17 +14,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 07 - hellok
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 08 - hellok
+- name: 🇸🇬 新加坡 (Singapore) 02 - hellok
   type: vmess
   server: 149.88.23.207
   port: 18000
@@ -96,46 +24,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 09 - hellok
-  type: vless
-  server: 5.223.41.164
-  port: 80
-  uuid: ef24e9b9-e7b2-4e01-b335-f289612d2d7a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.164
-- name: 🇸🇬 新加坡 (Singapore) 10 - hellok
-  type: vless
-  server: 5.223.41.125
-  port: 80
-  uuid: 3b821031-d7d4-4368-918b-15f2312dba2b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.125
-- name: 🇸🇬 新加坡 (Singapore) 11 - hellok
-  type: vless
-  server: 5.223.41.179
-  port: 80
-  uuid: ff642d7a-9a24-4078-a031-f8c656f4554e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.179
-- name: 🇸🇬 新加坡 (Singapore) 12 - hellok
+- name: 🇸🇬 新加坡 (Singapore) 03 - hellok
   type: vless
   server: 5.223.41.51
   port: 80
@@ -148,19 +37,20 @@ proxies:
     path: /
     headers:
       Host: 5.223.41.51
-- name: 🇸🇬 新加坡 (Singapore) 13 - hellok
+- name: 🇸🇬 新加坡 (Singapore) 04 - hellok
   type: vless
-  server: 136.85.2.50
-  port: 443
-  uuid: 5567cac6-2a32-4318-83cd-7df3a9eebbd7
+  server: 162.159.38.127
+  port: 2095
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4
-  servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇸🇬 新加坡 (Singapore) 14 - hellok
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇬 新加坡 (Singapore) 05 - hellok
   type: vmess
   server: ww11.levikogjgfdd.ir
   port: 18000
@@ -170,11 +60,25 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 15 - hellok
+- name: 🇸🇬 新加坡 (Singapore) 06 - hellok
   type: vless
-  server: 5.223.41.119
+  server: 139.162.51.49
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free-server.techsonic.dev
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 (Singapore) 07 - hellok
+  type: vless
+  server: 5.223.41.93
   port: 80
-  uuid: 31ae842f-a16e-4d94-8d72-776a5b78bc11
+  uuid: f2eada1b-fdec-48c6-8638-18ade32993d4
   udp: true
   tls: false
   skip-cert-verify: true
@@ -182,17 +86,10 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 5.223.41.119
-- name: 🇸🇬 新加坡 (Singapore) 16 - hellok
-  type: ss
-  server: 45.128.12.20
-  port: 14249
-  cipher: chacha20-ietf-poly1305
-  password: 9epp3o9ng8ej59uv
-  udp: true
-- name: 🇸🇬 新加坡 (Singapore) 17 - hellok
+      Host: 5.223.41.93
+- name: 🇸🇬 新加坡 (Singapore) 08 - hellok
   type: vmess
-  server: ww11.levikogjgfdd.ir
+  server: 149.88.23.207
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -200,7 +97,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 18 - hellok
+- name: 🇸🇬 新加坡 (Singapore) 09 - hellok
   type: vmess
   server: 149.88.23.202
   port: 18000
@@ -210,7 +107,31 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 19 - hellok
+- name: 🇸🇬 新加坡 (Singapore) 10 - hellok
+  type: vless
+  server: trackydev.site
+  port: 443
+  uuid: 92d67828-4c56-4795-af5a-f387651380dc
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: trackydev.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: trackydev.site
+- name: 🇸🇬 新加坡 (Singapore) 11 - hellok
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 12 - hellok
   type: vless
   server: 217.217.254.126
   port: 2053
@@ -222,7 +143,65 @@ proxies:
     public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 20 - hellok
+- name: 🇸🇬 新加坡 (Singapore) 13 - hellok
+  type: vless
+  server: 108.162.198.178
+  port: 8880
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇬 新加坡 (Singapore) 14 - hellok
+  type: vless
+  server: 104.18.46.234
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇬 新加坡 (Singapore) 15 - hellok
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 16 - hellok
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 17 - hellok
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 18 - hellok
   type: vless
   server: 5.223.41.179
   port: 80
@@ -235,9 +214,67 @@ proxies:
     path: /
     headers:
       Host: 5.223.41.179
+- name: 🇸🇬 新加坡 (Singapore) 19 - hellok
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 20 - hellok
+  type: vless
+  server: 5.223.41.93
+  port: 80
+  uuid: f2eada1b-fdec-48c6-8638-18ade32993d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5.223.41.93
 - name: 🇸🇬 新加坡 (Singapore) 21 - hellok
   type: vless
-  server: 140.245.120.16
+  server: 162.159.0.53
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇬 新加坡 (Singapore) 22 - hellok
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 23 - hellok
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 24 - hellok
+  type: vless
+  server: trackydev.site
   port: 443
   uuid: 92d67828-4c56-4795-af5a-f387651380dc
   udp: true
@@ -249,115 +286,54 @@ proxies:
     path: /
     headers:
       Host: trackydev.site
-- name: 🇸🇬 新加坡 (Singapore) 22 - hellok
-  type: vless
-  server: 5.223.41.93
-  port: 80
-  uuid: f2eada1b-fdec-48c6-8638-18ade32993d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.93
-- name: 🇸🇬 新加坡 (Singapore) 23 - hellok
-  type: vless
-  server: 5.223.41.93
-  port: 80
-  uuid: f2eada1b-fdec-48c6-8638-18ade32993d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.93
-- name: 🇸🇬 新加坡 (Singapore) 24 - hellok
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
 - name: 🇸🇬 新加坡 (Singapore) 25 - hellok
-  type: vless
-  server: 136.85.2.50
-  port: 443
-  uuid: 5567cac6-2a32-4318-83cd-7df3a9eebbd7
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4
-  servername: www.cloudflare.com
-  client-fingerprint: ios
 - name: 🇸🇬 新加坡 (Singapore) 26 - hellok
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 27 - hellok
   type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  server: 159.223.33.4
+  port: 443
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 27 - hellok
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
+  servername: qcswhj2.edge-cache.danfeng4.xyz
+  network: ws
+  ws-opts:
+    path: /danfeng-pw8lj2-nzliwt-h23l-978coeve
+    headers:
+      Host: qcswhj2.edge-cache.danfeng4.xyz
 - name: 🇸🇬 新加坡 (Singapore) 28 - hellok
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 172.64.32.108
+  port: 8880
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tlssecurity=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇸🇬 新加坡 (Singapore) 29 - hellok
-  type: vless
-  server: 5.223.41.164
-  port: 80
-  uuid: ef24e9b9-e7b2-4e01-b335-f289612d2d7a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.164
-- name: 🇸🇬 新加坡 (Singapore) 30 - hellok
-  type: vless
-  server: 5.223.41.93
-  port: 80
-  uuid: f2eada1b-fdec-48c6-8638-18ade32993d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.93
-- name: 🇸🇬 新加坡 (Singapore) 31 - hellok
   type: vmess
   server: 149.88.23.207
   port: 18000
@@ -367,9 +343,9 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 32 - hellok
+- name: 🇸🇬 新加坡 (Singapore) 30 - hellok
   type: vmess
-  server: ww11.levikogjgfdd.ir
+  server: 149.88.23.207
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -377,6 +353,32 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 31 - hellok
+  type: vless
+  server: 162.159.39.218
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇬 新加坡 (Singapore) 32 - hellok
+  type: vless
+  server: 104.18.46.234
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇸🇬 新加坡 (Singapore) 33 - hellok
   type: vless
   server: 217.217.254.126
@@ -388,75 +390,77 @@ proxies:
   reality-opts:
     public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇸🇬 新加坡 (Singapore) 34 - hellok
-  type: ss
-  server: 168.107.73.109
-  port: 56927
-  cipher: 2022-blake3-chacha20-poly1305
-  password: f1gzyT3H7Eu6g+j4WAD5IdouUwyt6vEmyjaYQSi8N+w=
-  udp: true
-- name: 🇸🇬 新加坡 (Singapore) 35 - hellok
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 36 - hellok
   type: vless
-  server: 5.223.41.93
-  port: 80
-  uuid: f2eada1b-fdec-48c6-8638-18ade32993d4
+  server: free-server.techsonic.dev
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: free-server.techsonic.dev
   network: ws
   ws-opts:
-    path: /
+    path: /free-server.techsonic.dev
     headers:
-      Host: 5.223.41.93
-- name: 🇸🇬 新加坡 (Singapore) 37 - hellok
+      Host: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 (Singapore) 35 - hellok
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇸🇬 新加坡 (Singapore) 36 - hellok
   type: vmess
-  server: ww11.levikogjgfdd.ir
+  server: 149.88.23.202
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 37 - hellok
+  type: vless
+  server: 134.122.154.210
+  port: 443
+  uuid: 7f549a50-4655-46b6-962d-183cfc532fc9
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 38 - hellok
   type: vless
-  server: 89.28.239.234
-  port: 8443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  server: 104.18.34.14
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: shephe.dpdns.org
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: shephe.dpdns.org
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇸🇬 新加坡 (Singapore) 39 - hellok
   type: vless
-  server: trackydev.site
-  port: 443
-  uuid: 92d67828-4c56-4795-af5a-f387651380dc
+  server: 104.18.46.46
+  port: 8880
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: trackydev.site
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560security=tls
     headers:
-      Host: trackydev.site
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇸🇬 新加坡 (Singapore) 40 - hellok
   type: vmess
   server: ww11.levikogjgfdd.ir
@@ -468,20 +472,23 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 41 - hellok
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 5.223.41.138
+  port: 80
+  uuid: ac8e1bf3-775a-44ee-b018-d553cce0201a
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5.223.41.138
 - name: 🇸🇬 新加坡 (Singapore) 42 - hellok
   type: vless
-  server: 5.223.41.125
+  server: 5.223.41.121
   port: 80
-  uuid: 3b821031-d7d4-4368-918b-15f2312dba2b
+  uuid: 0f7996b1-3ef7-4274-b612-0310270d2a41
   udp: true
   tls: false
   skip-cert-verify: true
@@ -489,315 +496,23 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 5.223.41.125
+      Host: 5.223.41.121
 - name: 🇸🇬 新加坡 (Singapore) 43 - hellok
-  type: vless
-  server: 5.223.41.119
+  type: vmess
+  server: mdk.mdmekjll.best
   port: 80
-  uuid: 31ae842f-a16e-4d94-8d72-776a5b78bc11
+  uuid: 6E571484-4166-4699-8F58-B34A1823691F
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /game/resources
     headers:
-      Host: 5.223.41.119
+      Host: mdk.mdmekjll.best
 - name: 🇸🇬 新加坡 (Singapore) 44 - hellok
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 45 - hellok
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 46 - hellok
-  type: vless
-  server: 140.245.120.16
-  port: 443
-  uuid: 92d67828-4c56-4795-af5a-f387651380dc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: trackydev.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: trackydev.site
-- name: 🇸🇬 新加坡 (Singapore) 47 - hellok
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 48 - hellok
-  type: vless
-  server: 5.223.41.188
-  port: 80
-  uuid: 8afe27ac-aac9-4ff3-933f-7a12682adb70
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.188
-- name: 🇸🇬 新加坡 (Singapore) 49 - hellok
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 50 - hellok
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 51 - hellok
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 52 - hellok
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 53 - hellok
-  type: vless
-  server: 217.217.254.126
-  port: 2053
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 54 - hellok
-  type: vless
-  server: 5.223.41.47
-  port: 80
-  uuid: e81daee0-e509-4983-a14a-763d3951c94d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.47
-- name: 🇸🇬 新加坡 (Singapore) 55 - hellok
-  type: vless
-  server: 136.85.2.50
-  port: 443
-  uuid: 5567cac6-2a32-4318-83cd-7df3a9eebbd7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇸🇬 新加坡 (Singapore) 56 - hellok
-  type: vless
-  server: 5.223.41.164
-  port: 80
-  uuid: ef24e9b9-e7b2-4e01-b335-f289612d2d7a
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.164
-- name: 🇸🇬 新加坡 (Singapore) 57 - hellok
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 58 - hellok
-  type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇸🇬 新加坡 (Singapore) 59 - hellok
-  type: vless
-  server: trackydev.site
-  port: 443
-  uuid: 92d67828-4c56-4795-af5a-f387651380dc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: trackydev.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: trackydev.site
-- name: 🇸🇬 新加坡 (Singapore) 60 - hellok
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 61 - hellok
-  type: vless
-  server: support.zoom.us
-  port: 80
-  uuid: 9b0025a3-3a36-4915-b4e1-89c5cd65c9cb
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /shalana
-    headers:
-      Host: onhit.shalana.shop
-- name: 🇸🇬 新加坡 (Singapore) 62 - hellok
-  type: vless
-  server: 5.223.41.5
-  port: 80
-  uuid: 180252b0-8c59-475c-a3b8-6c33c2ed2359
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.5
-- name: 🇸🇬 新加坡 (Singapore) 63 - hellok
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 64 - hellok
-  type: vless
-  server: 132.243.238.192
-  port: 8443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /+
-    headers:
-      Host: shephe.dpdns.org
-- name: 🇸🇬 新加坡 (Singapore) 65 - hellok
-  type: vless
-  server: 134.122.154.210
-  port: 443
-  uuid: 7f549a50-4655-46b6-962d-183cfc532fc9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 66 - hellok
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 67 - hellok
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 68 - hellok
-  type: vless
-  server: trackydev.site
-  port: 443
-  uuid: 92d67828-4c56-4795-af5a-f387651380dc
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: trackydev.site
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: trackydev.site
-- name: 🇸🇬 新加坡 (Singapore) 69 - hellok
   type: vless
   server: 91.193.58.255
   port: 2096
@@ -811,7 +526,282 @@ proxies:
     path: /free-server.techsonic.dev
     headers:
       Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 70 - hellok
+- name: 🇸🇬 新加坡 (Singapore) 45 - hellok
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 46 - hellok
+  type: vless
+  server: 172.64.32.108
+  port: 8080
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇬 新加坡 (Singapore) 47 - hellok
+  type: vless
+  server: 5.223.41.93
+  port: 80
+  uuid: f2eada1b-fdec-48c6-8638-18ade32993d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5.223.41.93
+- name: 🇸🇬 新加坡 (Singapore) 48 - hellok
+  type: vless
+  server: 5.223.41.95
+  port: 80
+  uuid: f29e9fce-1f37-4a83-9e6c-05a997123dfb
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5.223.41.95
+- name: 🇸🇬 新加坡 (Singapore) 49 - hellok
+  type: vless
+  server: 172.64.158.146
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇬 新加坡 (Singapore) 50 - hellok
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 51 - hellok
+  type: vless
+  server: 172.64.42.85
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇬 新加坡 (Singapore) 52 - hellok
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 53 - hellok
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 54 - hellok
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 55 - hellok
+  type: vless
+  server: 5.223.41.121
+  port: 80
+  uuid: 0f7996b1-3ef7-4274-b612-0310270d2a41
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5.223.41.121
+- name: 🇸🇬 新加坡 (Singapore) 56 - hellok
+  type: vless
+  server: 5.223.41.125
+  port: 80
+  uuid: 3b821031-d7d4-4368-918b-15f2312dba2b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5.223.41.125
+- name: 🇸🇬 新加坡 (Singapore) 57 - hellok
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 58 - hellok
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 59 - hellok
+  type: vless
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 60 - hellok
+  type: vless
+  server: 5.223.41.95
+  port: 80
+  uuid: f29e9fce-1f37-4a83-9e6c-05a997123dfb
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5.223.41.95
+- name: 🇸🇬 新加坡 (Singapore) 61 - hellok
+  type: vless
+  server: 5.223.41.125
+  port: 80
+  uuid: 3b821031-d7d4-4368-918b-15f2312dba2b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5.223.41.125
+- name: 🇸🇬 新加坡 (Singapore) 62 - hellok
+  type: vless
+  server: 5.223.41.179
+  port: 80
+  uuid: ff642d7a-9a24-4078-a031-f8c656f4554e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5.223.41.179
+- name: 🇸🇬 新加坡 (Singapore) 63 - hellok
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 64 - hellok
+  type: vless
+  server: support.zoom.us
+  port: 80
+  uuid: 9b0025a3-3a36-4915-b4e1-89c5cd65c9cb
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /shalana
+    headers:
+      Host: onhit.shalana.shop
+- name: 🇸🇬 新加坡 (Singapore) 65 - hellok
+  type: vless
+  server: 5.223.41.93
+  port: 80
+  uuid: f2eada1b-fdec-48c6-8638-18ade32993d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5.223.41.93
+- name: 🇸🇬 新加坡 (Singapore) 66 - hellok
+  type: vless
+  server: 172.64.42.85
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇬 新加坡 (Singapore) 67 - hellok
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 68 - hellok
   type: vless
   server: 140.245.120.16
   port: 443
@@ -825,7 +815,20 @@ proxies:
     path: /
     headers:
       Host: 140.245.120.16
-- name: 🇸🇬 新加坡 (Singapore) 71 - hellok
+- name: 🇸🇬 新加坡 (Singapore) 69 - hellok
+  type: vless
+  server: 5.223.41.179
+  port: 80
+  uuid: ff642d7a-9a24-4078-a031-f8c656f4554e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5.223.41.179
+- name: 🇸🇬 新加坡 (Singapore) 70 - hellok
   type: vmess
   server: ww11.levikogjgfdd.ir
   port: 18000
@@ -835,11 +838,25 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 71 - hellok
+  type: vless
+  server: 194.156.163.191
+  port: 8462
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: qcswhj2.edge-cache.danfeng4.xyz
+  network: ws
+  ws-opts:
+    path: /danfeng-pw8lj2-nzliwt-h23l-978coeve
+    headers:
+      Host: qcswhj2.edge-cache.danfeng4.xyz
 - name: 🇸🇬 新加坡 (Singapore) 72 - hellok
   type: vless
-  server: 5.223.41.47
+  server: 5.223.41.164
   port: 80
-  uuid: e81daee0-e509-4983-a14a-763d3951c94d
+  uuid: ef24e9b9-e7b2-4e01-b335-f289612d2d7a
   udp: true
   tls: false
   skip-cert-verify: true
@@ -847,10 +864,50 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 5.223.41.47
+      Host: 5.223.41.164
 - name: 🇸🇬 新加坡 (Singapore) 73 - hellok
+  type: vless
+  server: 5.223.41.138
+  port: 80
+  uuid: ac8e1bf3-775a-44ee-b018-d553cce0201a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5.223.41.138
+- name: 🇸🇬 新加坡 (Singapore) 74 - hellok
+  type: vless
+  server: trackydev.site
+  port: 443
+  uuid: 92d67828-4c56-4795-af5a-f387651380dc
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: trackydev.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: trackydev.site
+- name: 🇸🇬 新加坡 (Singapore) 75 - hellok
+  type: vless
+  server: 5.223.41.82
+  port: 80
+  uuid: 22aa8dac-98b8-4f54-b36d-fb60ec3db6d7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5.223.41.82
+- name: 🇸🇬 新加坡 (Singapore) 76 - hellok
   type: vmess
-  server: 149.88.23.202
+  server: ww11.levikogjgfdd.ir
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -858,46 +915,19 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 74 - hellok
+- name: 🇸🇬 新加坡 (Singapore) 77 - hellok
   type: vless
-  server: 136.85.2.50
-  port: 443
-  uuid: 5567cac6-2a32-4318-83cd-7df3a9eebbd7
+  server: 217.217.254.126
+  port: 2053
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 75 - hellok
-  type: vless
-  server: 5.223.41.5
-  port: 80
-  uuid: 180252b0-8c59-475c-a3b8-6c33c2ed2359
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.223.41.5
-- name: 🇸🇬 新加坡 (Singapore) 76 - hellok
-  type: vless
-  server: 43.174.195.1
-  port: 443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 🇸🇬 新加坡 (Singapore) 77 - hellok
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 78 - hellok
   type: vmess
   server: 149.88.23.207
   port: 18000
@@ -907,11 +937,31 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 78 - hellok
+- name: 🇸🇬 新加坡 (Singapore) 79 - hellok
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 80 - hellok
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 81 - hellok
   type: vless
-  server: 5.223.41.76
+  server: 5.223.41.164
   port: 80
-  uuid: c567daa6-1538-4db7-9b77-7bd5b2beece2
+  uuid: ef24e9b9-e7b2-4e01-b335-f289612d2d7a
   udp: true
   tls: false
   skip-cert-verify: true
@@ -919,14 +969,177 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 5.223.41.76
-- name: 🇸🇬 新加坡 (Singapore) 79 - hellok
-  type: ss
-  server: 154.86.30.45
-  port: 24443
-  cipher: aes-128-gcm
-  password: bKgENdAl@8Zx3lAc-HK-BD-20260622
+      Host: 5.223.41.164
+- name: 🇸🇬 新加坡 (Singapore) 82 - hellok
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 83 - hellok
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 84 - hellok
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 85 - hellok
+  type: vless
+  server: 216.195.205.48
+  port: 1891
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: qcswhj2.edge-cache.danfeng4.xyz
+  network: ws
+  ws-opts:
+    path: /danfeng-pw8lj2-nzliwt-h23l-978coeve
+    headers:
+      Host: qcswhj2.edge-cache.danfeng4.xyz
+- name: 🇸🇬 新加坡 (Singapore) 86 - hellok
+  type: vless
+  server: 159.223.33.4
+  port: 443
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: qcswhj2.edge-cache.danfeng4.xyz
+  network: ws
+  ws-opts:
+    path: /danfeng-pw8lj2-nzliwt-h23l-978coeve
+    headers:
+      Host: qcswhj2.edge-cache.danfeng4.xyz
+- name: 🇸🇬 新加坡 (Singapore) 87 - hellok
+  type: vless
+  server: 216.195.203.181
+  port: 1891
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: qcswhj2.edge-cache.danfeng4.xyz
+  network: ws
+  ws-opts:
+    path: /danfeng-pw8lj2-nzliwt-h23l-978coeve
+    headers:
+      Host: qcswhj2.edge-cache.danfeng4.xyz
+- name: 🇸🇬 新加坡 (Singapore) 88 - hellok
+  type: vless
+  server: 216.195.205.48
+  port: 1891
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: qcswhj2.edge-cache.danfeng4.xyz
+  network: ws
+  ws-opts:
+    path: /danfeng-pw8lj2-nzliwt-h23l-978coeve
+    headers:
+      Host: qcswhj2.edge-cache.danfeng4.xyz
+- name: 🇸🇬 新加坡 (Singapore) 89 - hellok
+  type: vless
+  server: 216.195.205.48
+  port: 1891
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: qcswhj2.edge-cache.danfeng4.xyz
+  network: ws
+  ws-opts:
+    path: /danfeng-pw8lj2-nzliwt-h23l-978coeve
+    headers:
+      Host: qcswhj2.edge-cache.danfeng4.xyz
+- name: 🇸🇬 新加坡 (Singapore) 90 - hellok
+  type: vless
+  server: 139.162.70.21
+  port: 443
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: qcswhj2.edge-cache.danfeng4.xyz
+  network: ws
+  ws-opts:
+    path: /danfeng-pw8lj2-nzliwt-h23l-978coeve
+    headers:
+      Host: qcswhj2.edge-cache.danfeng4.xyz
+- name: 🇸🇬 新加坡 (Singapore) 91 - hellok
+  type: vless
+  server: 152.42.246.237
+  port: 443
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: qcswhj2.edge-cache.danfeng4.xyz
+  network: ws
+  ws-opts:
+    path: /danfeng-pw8lj2-nzliwt-h23l-978coeve
+    headers:
+      Host: qcswhj2.edge-cache.danfeng4.xyz
+- name: 🇸🇬 新加坡 (Singapore) 92 - hellok
+  type: vless
+  server: 139.162.70.21
+  port: 443
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: qcswhj2.edge-cache.danfeng4.xyz
+  network: ws
+  ws-opts:
+    path: /danfeng-pw8lj2-nzliwt-h23l-978coeve
+    headers:
+      Host: qcswhj2.edge-cache.danfeng4.xyz
+- name: 🇸🇬 新加坡 (Singapore) 93 - hellok
+  type: vless
+  server: 216.195.203.181
+  port: 1891
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: qcswhj2.edge-cache.danfeng4.xyz
+  network: ws
+  ws-opts:
+    path: /danfeng-pw8lj2-nzliwt-h23l-978coeve
+    headers:
+      Host: qcswhj2.edge-cache.danfeng4.xyz
+- name: 🇸🇬 新加坡 (Singapore) 94 - hellok
+  type: vless
+  server: 152.42.246.237
+  port: 443
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: qcswhj2.edge-cache.danfeng4.xyz
+  network: ws
+  ws-opts:
+    path: /danfeng-pw8lj2-nzliwt-h23l-978coeve
+    headers:
+      Host: qcswhj2.edge-cache.danfeng4.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -1011,6 +1224,21 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 77 - hellok
   - 🇸🇬 新加坡 (Singapore) 78 - hellok
   - 🇸🇬 新加坡 (Singapore) 79 - hellok
+  - 🇸🇬 新加坡 (Singapore) 80 - hellok
+  - 🇸🇬 新加坡 (Singapore) 81 - hellok
+  - 🇸🇬 新加坡 (Singapore) 82 - hellok
+  - 🇸🇬 新加坡 (Singapore) 83 - hellok
+  - 🇸🇬 新加坡 (Singapore) 84 - hellok
+  - 🇸🇬 新加坡 (Singapore) 85 - hellok
+  - 🇸🇬 新加坡 (Singapore) 86 - hellok
+  - 🇸🇬 新加坡 (Singapore) 87 - hellok
+  - 🇸🇬 新加坡 (Singapore) 88 - hellok
+  - 🇸🇬 新加坡 (Singapore) 89 - hellok
+  - 🇸🇬 新加坡 (Singapore) 90 - hellok
+  - 🇸🇬 新加坡 (Singapore) 91 - hellok
+  - 🇸🇬 新加坡 (Singapore) 92 - hellok
+  - 🇸🇬 新加坡 (Singapore) 93 - hellok
+  - 🇸🇬 新加坡 (Singapore) 94 - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -1095,5 +1323,20 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 77 - hellok
   - 🇸🇬 新加坡 (Singapore) 78 - hellok
   - 🇸🇬 新加坡 (Singapore) 79 - hellok
+  - 🇸🇬 新加坡 (Singapore) 80 - hellok
+  - 🇸🇬 新加坡 (Singapore) 81 - hellok
+  - 🇸🇬 新加坡 (Singapore) 82 - hellok
+  - 🇸🇬 新加坡 (Singapore) 83 - hellok
+  - 🇸🇬 新加坡 (Singapore) 84 - hellok
+  - 🇸🇬 新加坡 (Singapore) 85 - hellok
+  - 🇸🇬 新加坡 (Singapore) 86 - hellok
+  - 🇸🇬 新加坡 (Singapore) 87 - hellok
+  - 🇸🇬 新加坡 (Singapore) 88 - hellok
+  - 🇸🇬 新加坡 (Singapore) 89 - hellok
+  - 🇸🇬 新加坡 (Singapore) 90 - hellok
+  - 🇸🇬 新加坡 (Singapore) 91 - hellok
+  - 🇸🇬 新加坡 (Singapore) 92 - hellok
+  - 🇸🇬 新加坡 (Singapore) 93 - hellok
+  - 🇸🇬 新加坡 (Singapore) 94 - hellok
 rules:
 - MATCH,PROXIES
