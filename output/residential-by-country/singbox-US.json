@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇶🇦 QA 01 - hellok"
+        "🇺🇸 美国 (United States) 01 (家宽) - hellok",
+        "🇺🇸 美国 (United States) 02 (家宽) - hellok"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇶🇦 QA 01 - hellok"
+        "🇺🇸 美国 (United States) 01 (家宽) - hellok",
+        "🇺🇸 美国 (United States) 02 (家宽) - hellok"
       ],
       "url": "https://www.google.com/generate_204"
     },

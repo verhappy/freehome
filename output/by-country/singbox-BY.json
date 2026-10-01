@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇧🇾 BY 01 - hellok",
+        "🇧🇾 BY 02 - hellok",
+        "🇧🇾 BY 03 - hellok",
+        "🇧🇾 BY 04 - hellok",
+        "🇧🇾 BY 05 - hellok",
+        "🇧🇾 BY 06 - hellok"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇧🇾 BY 01 - hellok",
+        "🇧🇾 BY 02 - hellok",
+        "🇧🇾 BY 03 - hellok",
+        "🇧🇾 BY 04 - hellok",
+        "🇧🇾 BY 05 - hellok",
+        "🇧🇾 BY 06 - hellok"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
