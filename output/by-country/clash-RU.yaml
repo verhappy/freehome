@@ -4,29 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇱 CL 01 - hellok
+- name: 🇷🇺 俄罗斯 (Russia) 01 - hellok
   type: vless
-  server: 34.176.187.219
+  server: 78.159.246.110
   port: 443
-  uuid: ad5325f8-f0b3-41c4-a561-113529b60e70
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: HnHVuSObMrldWGzq1-Eb93fwgu6QQRp6H0_8LX3ikDc
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  servername: fbsv6.guardora.pro
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: fbsv6.guardora.pro
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇱 CL 01 - hellok
+  - 🇷🇺 俄罗斯 (Russia) 01 - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇱 CL 01 - hellok
+  - 🇷🇺 俄罗斯 (Russia) 01 - hellok
 rules:
 - MATCH,PROXIES
