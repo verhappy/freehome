@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇰🇬 KG 01 - hellok",
+        "🇰🇬 KG 02 - hellok",
+        "🇰🇬 KG 03 - hellok",
+        "🇰🇬 KG 04 - hellok",
+        "🇰🇬 KG 05 - hellok",
+        "🇰🇬 KG 06 - hellok",
+        "🇰🇬 KG 07 - hellok",
+        "🇰🇬 KG 08 - hellok"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇰🇬 KG 01 - hellok",
+        "🇰🇬 KG 02 - hellok",
+        "🇰🇬 KG 03 - hellok",
+        "🇰🇬 KG 04 - hellok",
+        "🇰🇬 KG 05 - hellok",
+        "🇰🇬 KG 06 - hellok",
+        "🇰🇬 KG 07 - hellok",
+        "🇰🇬 KG 08 - hellok"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

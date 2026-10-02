@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - hellok
+  type: ss
+  server: 8.209.74.72
+  port: 20001
+  cipher: chacha20-ietf-poly1305
+  password: PWpjPo3tqhPN4yRZ
+  udp: true
+- name: 🇩🇪 德国 (Germany) 02 - hellok
   type: vmess
   server: 216.106.187.60
   port: 22324
@@ -14,13 +21,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 02 - hellok
-  type: ss
-  server: 51.195.126.38
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 2YdE4lFOid5a
-  udp: true
 - name: 🇩🇪 德国 (Germany) 03 - hellok
   type: vless
   server: 81.95.4.189
@@ -36,68 +36,81 @@ proxies:
     headers:
       Host: bab-6.site
 - name: 🇩🇪 德国 (Germany) 04 - hellok
-  type: vless
-  server: 188.245.25.223
-  port: 1085
-  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 05 - hellok
-  type: vmess
-  server: 31.77.8.97
-  port: 110
-  uuid: d2d8601b-c14b-42c6-b8ea-33889bce152a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 06 - hellok
   type: ss
-  server: 130.61.42.148
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: tGXsbUDisR28c/KS0RDOlgQS1gVT7UJ5Sf0/5QvMwR4=
+  server: 51.195.126.38
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 2YdE4lFOid5a
   udp: true
-- name: 🇩🇪 德国 (Germany) 07 - hellok
-  type: vless
-  server: site.check-looks.space
-  port: 2083
-  uuid: ca608afb-55ff-4f36-9d00-606fedbb30e1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: Site.check-looks.space
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: site.check-looks.space
-- name: 🇩🇪 德国 (Germany) 08 - hellok
-  type: vmess
-  server: 31.77.8.97
-  port: 110
-  uuid: d2d8601b-c14b-42c6-b8ea-33889bce152a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 09 - hellok
+- name: 🇩🇪 德国 (Germany) 05 - hellok
   type: ss
   server: 185.226.172.8
   port: 8008
   cipher: aes-256-gcm
   password: XKFKl2rULjIp74
   udp: true
-- name: 🇩🇪 德国 (Germany) 10 - hellok
-  type: ss
-  server: 8.209.74.72
-  port: 20001
-  cipher: chacha20-ietf-poly1305
-  password: PWpjPo3tqhPN4yRZ
+- name: 🇩🇪 德国 (Germany) 06 - hellok
+  type: vless
+  server: 139.162.149.105
+  port: 80
+  uuid: 5aae7d2d-c152-42cc-afb6-fe805fb94531
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 139.162.149.105
+- name: 🇩🇪 德国 (Germany) 07 - hellok
+  type: vless
+  server: apadana.gamingnet.ir
+  port: 33483
+  uuid: 758a691a-45d2-4462-a0e8-991248a6994e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: apadana.gamingnet.ir
+- name: 🇩🇪 德国 (Germany) 08 - hellok
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇩🇪 德国 (Germany) 09 - hellok
+  type: vmess
+  server: 193.108.117.54
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: aidrivercat.org
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: aidrivercat.org
+- name: 🇩🇪 德国 (Germany) 10 - hellok
+  type: vless
+  server: 49.13.231.249
+  port: 33483
+  uuid: 758a691a-45d2-4462-a0e8-991248a6994e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 49.13.231.249
 - name: 🇩🇪 德国 (Germany) 11 - hellok
   type: vless
   server: rubifen.adaspoloandco.com
@@ -114,155 +127,30 @@ proxies:
       Host: rubifen.adaspoloandco.com
 - name: 🇩🇪 德国 (Germany) 12 - hellok
   type: vless
-  server: 45.88.12.110
-  port: 2083
-  uuid: 7e5b1e82-73db-429a-93b2-7839a0bf4dc0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mol.ultimagamest.com
-  network: ws
-  ws-opts:
-    path: /vless-ws
-    headers:
-      Host: 45.88.12.110
-- name: 🇩🇪 德国 (Germany) 13 - hellok
-  type: vmess
-  server: 185.177.229.129
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+  server: 139.162.149.105
+  port: 80
+  uuid: 5aae7d2d-c152-42cc-afb6-fe805fb94531
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 14 - hellok
-  type: vmess
-  server: 185.177.229.129
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 15 - hellok
-  type: vmess
-  server: 185.177.229.129
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 16 - hellok
-  type: ss
-  server: 213.202.208.199
-  port: 7001
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  udp: true
-- name: 🇩🇪 德国 (Germany) 17 - hellok
-  type: vless
-  server: 81.95.4.189
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
-- name: 🇩🇪 德国 (Germany) 18 - hellok
-  type: vless
-  server: 94.228.171.219
-  port: 8444
-  uuid: 9cb2520c-148b-4bbc-a149-9d5a43ff0db3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: germany.tofreedom.ru
-  network: ws
-  ws-opts:
-    path: /c7f5317cd04691bc
-    headers:
-      Host: germany.tofreedom.ru
-- name: 🇩🇪 德国 (Germany) 19 - hellok
-  type: ss
-  server: 130.61.42.148
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: tGXsbUDisR28c/KS0RDOlgQS1gVT7UJ5Sf0/5QvMwR4=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 20 - hellok
-  type: vmess
-  server: 193.108.117.54
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: aidrivercat.org
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: aidrivercat.org
-- name: 🇩🇪 德国 (Germany) 21 - hellok
-  type: ss
-  server: 209.46.102.22
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 1hhrqrokj3ag
-  udp: true
-- name: 🇩🇪 德国 (Germany) 22 - hellok
-  type: vless
-  server: 188.114.97.1
-  port: 2053
-  uuid: 0b3e7958-e5c4-498f-ab21-b49686f95d2d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bold-term-4edd.mbigspot.workers.dev
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: bold-term-4edd.mbigspot.workers.dev
-- name: 🇩🇪 德国 (Germany) 23 - hellok
+      Host: 139.162.149.105
+- name: 🇩🇪 德国 (Germany) 13 - hellok
   type: vless
-  server: 81.95.4.189
+  server: 62.192.153.132
   port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
-- name: 🇩🇪 德国 (Germany) 24 - hellok
-  type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 25 - hellok
+  reality-opts:
+    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
+  servername: example.org
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 14 - hellok
   type: vless
   server: rubifen.adaspoloandco.com
   port: 443
@@ -276,27 +164,14 @@ proxies:
     path: /GOrbEh
     headers:
       Host: rubifen.adaspoloandco.com
-- name: 🇩🇪 德国 (Germany) 26 - hellok
-  type: vmess
-  server: 185.177.229.128
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+- name: 🇩🇪 德国 (Germany) 15 - hellok
+  type: ss
+  server: 213.202.208.199
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
   udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 27 - hellok
-  type: vmess
-  server: 216.106.187.60
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 28 - hellok
+- name: 🇩🇪 德国 (Germany) 16 - hellok
   type: vmess
   server: 185.177.229.129
   port: 22324
@@ -306,33 +181,36 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 29 - hellok
-  type: vless
-  server: germany.tofreedom.ru
-  port: 8444
-  uuid: 9cb2520c-148b-4bbc-a149-9d5a43ff0db3
+- name: 🇩🇪 德国 (Germany) 17 - hellok
+  type: vmess
+  server: 31.77.8.97
+  port: 110
+  uuid: d2d8601b-c14b-42c6-b8ea-33889bce152a
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: germany.tofreedom.ru
-  network: ws
-  ws-opts:
-    path: /c7f5317cd04691bc
-    headers:
-      Host: germany.tofreedom.ru
-- name: 🇩🇪 德国 (Germany) 30 - hellok
+- name: 🇩🇪 德国 (Germany) 18 - hellok
+  type: ss
+  server: 130.61.42.148
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: tGXsbUDisR28c/KS0RDOlgQS1gVT7UJ5Sf0/5QvMwR4=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 19 - hellok
   type: vless
-  server: 139.162.149.105
+  server: 57.129.41.216
   port: 80
-  uuid: 5aae7d2d-c152-42cc-afb6-fe805fb94531
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /vless/
     headers:
-      Host: 139.162.149.105
+      Host: OV-Germany1.09vpn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -357,17 +235,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 17 - hellok
   - 🇩🇪 德国 (Germany) 18 - hellok
   - 🇩🇪 德国 (Germany) 19 - hellok
-  - 🇩🇪 德国 (Germany) 20 - hellok
-  - 🇩🇪 德国 (Germany) 21 - hellok
-  - 🇩🇪 德国 (Germany) 22 - hellok
-  - 🇩🇪 德国 (Germany) 23 - hellok
-  - 🇩🇪 德国 (Germany) 24 - hellok
-  - 🇩🇪 德国 (Germany) 25 - hellok
-  - 🇩🇪 德国 (Germany) 26 - hellok
-  - 🇩🇪 德国 (Germany) 27 - hellok
-  - 🇩🇪 德国 (Germany) 28 - hellok
-  - 🇩🇪 德国 (Germany) 29 - hellok
-  - 🇩🇪 德国 (Germany) 30 - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -392,16 +259,5 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 17 - hellok
   - 🇩🇪 德国 (Germany) 18 - hellok
   - 🇩🇪 德国 (Germany) 19 - hellok
-  - 🇩🇪 德国 (Germany) 20 - hellok
-  - 🇩🇪 德国 (Germany) 21 - hellok
-  - 🇩🇪 德国 (Germany) 22 - hellok
-  - 🇩🇪 德国 (Germany) 23 - hellok
-  - 🇩🇪 德国 (Germany) 24 - hellok
-  - 🇩🇪 德国 (Germany) 25 - hellok
-  - 🇩🇪 德国 (Germany) 26 - hellok
-  - 🇩🇪 德国 (Germany) 27 - hellok
-  - 🇩🇪 德国 (Germany) 28 - hellok
-  - 🇩🇪 德国 (Germany) 29 - hellok
-  - 🇩🇪 德国 (Germany) 30 - hellok
 rules:
 - MATCH,PROXIES
