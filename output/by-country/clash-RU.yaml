@@ -6,98 +6,7 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - hellok
   type: vless
-  server: 108.162.198.178
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 02 - hellok
-  type: vless
-  server: 162.159.38.127
-  port: 8880
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 03 - hellok
-  type: vless
-  server: 104.18.46.234
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 04 - hellok
-  type: vless
-  server: 162.159.38.127
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 05 - hellok
-  type: vless
-  server: 162.159.43.187
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 06 - hellok
-  type: vless
-  server: 172.64.42.85
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 07 - hellok
-  type: vless
-  server: 104.18.34.14
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 08 - hellok
-  type: vless
-  server: 46.243.232.125
+  server: fbsv6.guardora.pro
   port: 443
   uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
   udp: true
@@ -109,20 +18,21 @@ proxies:
     path: /ws
     headers:
       Host: fbsv6.guardora.pro
-- name: 🇷🇺 俄罗斯 (Russia) 09 - hellok
+- name: 🇷🇺 俄罗斯 (Russia) 02 - hellok
   type: vless
-  server: 108.162.198.178
-  port: 8880
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 81.94.148.214
+  port: 443
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: fbsv6.guardora.pro
   network: ws
   ws-opts:
-    path: /
+    path: /ws
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 10 - hellok
+      Host: fbsv6.guardora.pro
+- name: 🇷🇺 俄罗斯 (Russia) 03 - hellok
   type: vless
   server: 78.159.246.110
   port: 443
@@ -136,32 +46,34 @@ proxies:
     path: /ws
     headers:
       Host: fbsv6.guardora.pro
-- name: 🇷🇺 俄罗斯 (Russia) 11 - hellok
+- name: 🇷🇺 俄罗斯 (Russia) 04 - hellok
   type: vless
-  server: 172.64.154.8
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 46.243.232.125
+  port: 443
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: fbsv6.guardora.pro
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /ws
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 12 - hellok
+      Host: fbsv6.guardora.pro
+- name: 🇷🇺 俄罗斯 (Russia) 05 - hellok
   type: vless
-  server: 162.159.45.19
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 172.67.147.209
+  port: 443
+  uuid: 38d6b629-64c2-4c31-a10d-26eb3a2a053d
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: lHNs3ww2-CXQ-Gj1vvOBkEPIg4noPkc.hqu4v38Hi9iFtcp6mZfMX-3bmx.WoRKeRS.dEV
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /vl/cxl8Wn1ylnsk63nJ0
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: lhns3ww2-cxq-gj1vvobkepig4nopkc.hqu4v38hi9iftcp6mzfmx-3bmx.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -172,13 +84,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - hellok
   - 🇷🇺 俄罗斯 (Russia) 04 - hellok
   - 🇷🇺 俄罗斯 (Russia) 05 - hellok
-  - 🇷🇺 俄罗斯 (Russia) 06 - hellok
-  - 🇷🇺 俄罗斯 (Russia) 07 - hellok
-  - 🇷🇺 俄罗斯 (Russia) 08 - hellok
-  - 🇷🇺 俄罗斯 (Russia) 09 - hellok
-  - 🇷🇺 俄罗斯 (Russia) 10 - hellok
-  - 🇷🇺 俄罗斯 (Russia) 11 - hellok
-  - 🇷🇺 俄罗斯 (Russia) 12 - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -189,12 +94,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - hellok
   - 🇷🇺 俄罗斯 (Russia) 04 - hellok
   - 🇷🇺 俄罗斯 (Russia) 05 - hellok
-  - 🇷🇺 俄罗斯 (Russia) 06 - hellok
-  - 🇷🇺 俄罗斯 (Russia) 07 - hellok
-  - 🇷🇺 俄罗斯 (Russia) 08 - hellok
-  - 🇷🇺 俄罗斯 (Russia) 09 - hellok
-  - 🇷🇺 俄罗斯 (Russia) 10 - hellok
-  - 🇷🇺 俄罗斯 (Russia) 11 - hellok
-  - 🇷🇺 俄罗斯 (Russia) 12 - hellok
 rules:
 - MATCH,PROXIES
