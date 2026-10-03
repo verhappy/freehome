@@ -6,18 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 LK 01 - hellok",
-        "🇱🇰 LK 02 - hellok",
-        "🇱🇰 LK 03 - hellok"
+        "🇬🇪 GE 01 - hellok",
+        "🇬🇪 GE 02 - hellok"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 LK 01 - hellok",
-        "🇱🇰 LK 02 - hellok",
-        "🇱🇰 LK 03 - hellok"
+        "🇬🇪 GE 01 - hellok",
+        "🇬🇪 GE 02 - hellok"
       ],
       "url": "https://www.google.com/generate_204"
     },
