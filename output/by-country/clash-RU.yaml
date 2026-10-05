@@ -6,18 +6,17 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - hellok
   type: vless
-  server: 217.19.122.200
-  port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  server: 185.148.107.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: fbsv6.guardora.pro
   network: ws
   ws-opts:
-    path: /ws
+    path: /
     headers:
-      Host: fbsv6.guardora.pro
+      Host: vms.lifetime55.workers.dev
 - name: 🇷🇺 俄罗斯 (Russia) 02 - hellok
   type: vless
   server: 217.19.122.200
@@ -34,7 +33,7 @@ proxies:
       Host: fbsv6.guardora.pro
 - name: 🇷🇺 俄罗斯 (Russia) 03 - hellok
   type: vless
-  server: fbsv6.guardora.pro
+  server: 217.19.122.200
   port: 443
   uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
   udp: true
@@ -48,7 +47,7 @@ proxies:
       Host: fbsv6.guardora.pro
 - name: 🇷🇺 俄罗斯 (Russia) 04 - hellok
   type: vless
-  server: 78.159.246.110
+  server: 217.19.122.200
   port: 443
   uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
   udp: true
@@ -62,7 +61,49 @@ proxies:
       Host: fbsv6.guardora.pro
 - name: 🇷🇺 俄罗斯 (Russia) 05 - hellok
   type: vless
+  server: 78.159.246.110
+  port: 443
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fbsv6.guardora.pro
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: fbsv6.guardora.pro
+- name: 🇷🇺 俄罗斯 (Russia) 06 - hellok
+  type: vless
   server: 217.19.122.200
+  port: 443
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fbsv6.guardora.pro
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: fbsv6.guardora.pro
+- name: 🇷🇺 俄罗斯 (Russia) 07 - hellok
+  type: vless
+  server: fbsv6.guardora.pro
+  port: 443
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fbsv6.guardora.pro
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: fbsv6.guardora.pro
+- name: 🇷🇺 俄罗斯 (Russia) 08 - hellok
+  type: vless
+  server: 78.159.246.110
   port: 443
   uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
   udp: true
@@ -84,6 +125,9 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - hellok
   - 🇷🇺 俄罗斯 (Russia) 04 - hellok
   - 🇷🇺 俄罗斯 (Russia) 05 - hellok
+  - 🇷🇺 俄罗斯 (Russia) 06 - hellok
+  - 🇷🇺 俄罗斯 (Russia) 07 - hellok
+  - 🇷🇺 俄罗斯 (Russia) 08 - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -94,5 +138,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - hellok
   - 🇷🇺 俄罗斯 (Russia) 04 - hellok
   - 🇷🇺 俄罗斯 (Russia) 05 - hellok
+  - 🇷🇺 俄罗斯 (Russia) 06 - hellok
+  - 🇷🇺 俄罗斯 (Russia) 07 - hellok
+  - 🇷🇺 俄罗斯 (Russia) 08 - hellok
 rules:
 - MATCH,PROXIES

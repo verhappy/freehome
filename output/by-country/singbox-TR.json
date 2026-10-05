@@ -6,14 +6,26 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - hellok"
+        "🇹🇷 土耳其 (Turkey) 01 - hellok",
+        "🇹🇷 土耳其 (Turkey) 02 - hellok",
+        "🇹🇷 土耳其 (Turkey) 03 - hellok",
+        "🇹🇷 土耳其 (Turkey) 04 - hellok",
+        "🇹🇷 土耳其 (Turkey) 05 - hellok",
+        "🇹🇷 土耳其 (Turkey) 06 - hellok",
+        "🇹🇷 土耳其 (Turkey) 07 - hellok"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - hellok"
+        "🇹🇷 土耳其 (Turkey) 01 - hellok",
+        "🇹🇷 土耳其 (Turkey) 02 - hellok",
+        "🇹🇷 土耳其 (Turkey) 03 - hellok",
+        "🇹🇷 土耳其 (Turkey) 04 - hellok",
+        "🇹🇷 土耳其 (Turkey) 05 - hellok",
+        "🇹🇷 土耳其 (Turkey) 06 - hellok",
+        "🇹🇷 土耳其 (Turkey) 07 - hellok"
       ],
       "url": "https://www.google.com/generate_204"
     },
