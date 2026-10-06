@@ -16,20 +16,6 @@ proxies:
   skip-cert-verify: true
 - name: 🇹🇭 TH 02 - hellok
   type: vless
-  server: 104.16.10.185
-  port: 443
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: v2ray.simspeedup.com
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
-- name: 🇹🇭 TH 03 - hellok
-  type: vless
   server: 103.86.49.57
   port: 80
   uuid: 3c52e091-6714-4915-949f-2149fe69951b
@@ -48,7 +34,6 @@ proxy-groups:
   - AUTO
   - 🇹🇭 TH 01 - hellok
   - 🇹🇭 TH 02 - hellok
-  - 🇹🇭 TH 03 - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -56,6 +41,5 @@ proxy-groups:
   proxies:
   - 🇹🇭 TH 01 - hellok
   - 🇹🇭 TH 02 - hellok
-  - 🇹🇭 TH 03 - hellok
 rules:
 - MATCH,PROXIES
