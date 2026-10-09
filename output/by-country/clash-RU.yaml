@@ -6,24 +6,52 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - hellok
   type: vless
-  server: 45.9.13.99
-  port: 443
-  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
+  server: 172.64.145.202
+  port: 2083
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: x.m-90.xyz
+  servername: newwk1.f1w.de5.net
   network: ws
   ws-opts:
-    path: t.me/TEAMNETGRATISCOL
+    path: /
     headers:
-      Host: x.m-90.xyz
+      Host: newwk1.f1w.de5.net
 - name: 🇷🇺 俄罗斯 (Russia) 02 - hellok
   type: ss
   server: 46.17.45.31
   port: 50660
   cipher: aes-256-gcm
   password: bdb313adf74c2ede
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 03 - hellok
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: eicdhshSrFLCx/sZ1PSpuKyoVWGZpU95tFS4iGC1c04=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 04 - hellok
+  type: vless
+  server: 188.114.97.1
+  port: 2053
+  uuid: 0b3e7958-e5c4-498f-ab21-b49686f95d2d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bold-term-4edd.mbigspot.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: bold-term-4edd.mbigspot.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 05 - hellok
+  type: ss
+  server: 194.87.68.140
+  port: 50660
+  cipher: aes-256-gcm
+  password: 81a20429165df87e
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -32,6 +60,9 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - hellok
   - 🇷🇺 俄罗斯 (Russia) 02 - hellok
+  - 🇷🇺 俄罗斯 (Russia) 03 - hellok
+  - 🇷🇺 俄罗斯 (Russia) 04 - hellok
+  - 🇷🇺 俄罗斯 (Russia) 05 - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -39,5 +70,8 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - hellok
   - 🇷🇺 俄罗斯 (Russia) 02 - hellok
+  - 🇷🇺 俄罗斯 (Russia) 03 - hellok
+  - 🇷🇺 俄罗斯 (Russia) 04 - hellok
+  - 🇷🇺 俄罗斯 (Russia) 05 - hellok
 rules:
 - MATCH,PROXIES
