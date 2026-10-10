@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - hellok
   type: vless
-  server: 172.64.152.241
+  server: 104.21.70.21
   port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ccc.010304.xyz
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /tyxyws
     headers:
-      Host: ccc.010304.xyz
+      Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 02 - hellok
   type: vless
   server: 188.114.97.6
@@ -34,35 +34,7 @@ proxies:
       Host: lucasjow.us.ci
 - name: 🌐 其他地区 (Other) 03 - hellok
   type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
-    headers:
-      Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 04 - hellok
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-    headers:
-      Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 05 - hellok
-  type: vless
-  server: 104.19.164.155
+  server: 104.16.111.202
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -74,7 +46,7 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 06 - hellok
+- name: 🌐 其他地区 (Other) 04 - hellok
   type: vless
   server: 188.114.97.6
   port: 443
@@ -85,10 +57,65 @@ proxies:
   servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NETfp=chrome
+    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---TOOTFFARANGI
     headers:
       Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 05 - hellok
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---DailyConfigs
+    headers:
+      Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 06 - hellok
+  type: vless
+  server: 172.64.152.241
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
 - name: 🌐 其他地区 (Other) 07 - hellok
+  type: vless
+  server: 172.64.150.28
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🌐 其他地区 (Other) 08 - hellok
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: a.cwvps.eu.org
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: a.cwvps.eu.org
+- name: 🌐 其他地区 (Other) 09 - hellok
   type: vless
   server: 172.64.152.241
   port: 443
@@ -102,7 +129,21 @@ proxies:
     path: /cart/docs/www/proxyip=108.160.132.132
     headers:
       Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 08 - hellok
+- name: 🌐 其他地区 (Other) 10 - hellok
+  type: vless
+  server: 172.64.152.241
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 11 - hellok
   type: vless
   server: 172.64.144.82
   port: 443
@@ -116,9 +157,9 @@ proxies:
     path: /cart/docs/www/proxyip=108.160.132.132
     headers:
       Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 09 - hellok
+- name: 🌐 其他地区 (Other) 12 - hellok
   type: vless
-  server: 104.21.33.59
+  server: 162.159.254.3
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -130,7 +171,35 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 10 - hellok
+- name: 🌐 其他地区 (Other) 13 - hellok
+  type: vless
+  server: 172.64.144.82
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132
+    headers:
+      Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 14 - hellok
+  type: vless
+  server: 104.18.35.15
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132
+    headers:
+      Host: lucasjow.us.ci
+- name: 🌐 其他地区 (Other) 15 - hellok
   type: vless
   server: 188.114.97.6
   port: 443
@@ -144,49 +213,35 @@ proxies:
     path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---TOOTFARANGI
     headers:
       Host: lucasjow.us.ci
-- name: 🌐 其他地区 (Other) 11 - hellok
+- name: 🌐 其他地区 (Other) 16 - hellok
   type: vless
-  server: 104.21.6.186
+  server: 104.26.4.2
   port: 443
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: a.cwvps.eu.org
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /ws
+    path: /
     headers:
-      Host: a.cwvps.eu.org
-- name: 🌐 其他地区 (Other) 12 - hellok
+      Host: ccc.010304.xyz
+- name: 🌐 其他地区 (Other) 17 - hellok
   type: vless
-  server: 104.17.189.78
-  port: 443
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
+  server: 8.47.69.0
+  port: 2053
+  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: a.cwvps.eu.org
+  servername: vless.api-music-fa.com
   network: ws
   ws-opts:
-    path: /ws
+    path: /api/voip/updates/static/fr2035
     headers:
-      Host: a.cwvps.eu.org
-- name: 🌐 其他地区 (Other) 13 - hellok
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 698b212d-ca12-4794-8256-252a6e1b4533
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: w2p6.vpnpolar.online
-  network: ws
-  ws-opts:
-    path: /beeline?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-    headers:
-      Host: w2p6.vpnpolar.online
-- name: 🌐 其他地区 (Other) 14 - hellok
+      Host: fr.api-music-fa.com
+- name: 🌐 其他地区 (Other) 18 - hellok
   type: vless
   server: 172.64.150.43
   port: 8080
@@ -199,6 +254,20 @@ proxies:
     path: /sg-melbi
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
+- name: 🌐 其他地区 (Other) 19 - hellok
+  type: vless
+  server: 104.18.43.174
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132
+    headers:
+      Host: lucasjow.us.ci
 proxy-groups:
 - name: PROXIES
   type: select
@@ -218,6 +287,11 @@ proxy-groups:
   - 🌐 其他地区 (Other) 12 - hellok
   - 🌐 其他地区 (Other) 13 - hellok
   - 🌐 其他地区 (Other) 14 - hellok
+  - 🌐 其他地区 (Other) 15 - hellok
+  - 🌐 其他地区 (Other) 16 - hellok
+  - 🌐 其他地区 (Other) 17 - hellok
+  - 🌐 其他地区 (Other) 18 - hellok
+  - 🌐 其他地区 (Other) 19 - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -237,5 +311,10 @@ proxy-groups:
   - 🌐 其他地区 (Other) 12 - hellok
   - 🌐 其他地区 (Other) 13 - hellok
   - 🌐 其他地区 (Other) 14 - hellok
+  - 🌐 其他地区 (Other) 15 - hellok
+  - 🌐 其他地区 (Other) 16 - hellok
+  - 🌐 其他地区 (Other) 17 - hellok
+  - 🌐 其他地区 (Other) 18 - hellok
+  - 🌐 其他地区 (Other) 19 - hellok
 rules:
 - MATCH,PROXIES
