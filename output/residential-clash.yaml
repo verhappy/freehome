@@ -46,6 +46,26 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: 103.180.20.108
+- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - hellok
+  type: ss
+  server: 211.174.113.172
+  port: 49642
+  cipher: aes-256-gcm
+  password: ac9c0a7b
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 05 (家宽) - hellok
+  type: vless
+  server: 172.67.152.71
+  port: 8880
+  uuid: df26029b-bffe-4ce2-9246-25b52ed2b1c7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: polished-field-4448.186-705.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,6 +74,8 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - hellok
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - hellok
   - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - hellok
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - hellok
+  - 🇰🇷 韩国 (South Korea) 05 (家宽) - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,5 +84,7 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - hellok
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - hellok
   - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - hellok
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - hellok
+  - 🇰🇷 韩国 (South Korea) 05 (家宽) - hellok
 rules:
 - MATCH,PROXIES
