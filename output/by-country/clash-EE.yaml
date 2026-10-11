@@ -20,7 +20,7 @@ proxies:
       Host: fdghyt.com
 - name: 🇪🇪 EE 02 - hellok
   type: vless
-  server: 77.72.85.247
+  server: ee10.zazazuza.ru
   port: 8443
   uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
   udp: true
@@ -34,13 +34,18 @@ proxies:
       Host: fdghyt.com
 - name: 🇪🇪 EE 03 - hellok
   type: vless
-  server: 94.183.170.135
+  server: 77.72.85.247
   port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
+  servername: fdghyt.com
+  network: ws
+  ws-opts:
+    path: /vpn-wss/fluxor/59011/
+    headers:
+      Host: fdghyt.com
 - name: 🇪🇪 EE 04 - hellok
   type: vless
   server: 77.72.85.247
@@ -57,18 +62,17 @@ proxies:
       Host: fdghyt.com
 - name: 🇪🇪 EE 05 - hellok
   type: vless
-  server: ee10.zazazuza.ru
-  port: 8443
-  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: fdghyt.com
   network: ws
   ws-opts:
-    path: /vpn-wss/fluxor/59011/
+    path: /
     headers:
-      Host: fdghyt.com
+      Host: 94.183.170.135
 - name: 🇪🇪 EE 06 - hellok
   type: vless
   server: 77.72.85.247
@@ -85,6 +89,15 @@ proxies:
       Host: fdghyt.com
 - name: 🇪🇪 EE 07 - hellok
   type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 08 - hellok
+  type: vless
   server: 77.72.85.246
   port: 8443
   uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
@@ -97,7 +110,7 @@ proxies:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: fdghyt.com
-- name: 🇪🇪 EE 08 - hellok
+- name: 🇪🇪 EE 09 - hellok
   type: vless
   server: 77.72.85.246
   port: 8443
@@ -124,6 +137,7 @@ proxy-groups:
   - 🇪🇪 EE 06 - hellok
   - 🇪🇪 EE 07 - hellok
   - 🇪🇪 EE 08 - hellok
+  - 🇪🇪 EE 09 - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -137,5 +151,6 @@ proxy-groups:
   - 🇪🇪 EE 06 - hellok
   - 🇪🇪 EE 07 - hellok
   - 🇪🇪 EE 08 - hellok
+  - 🇪🇪 EE 09 - hellok
 rules:
 - MATCH,PROXIES
