@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - hellok
   type: vless
-  server: 216.173.67.59
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇲🇾 MY 02 - hellok
-  type: vless
   server: platform102.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
@@ -31,7 +17,7 @@ proxies:
     path: /platform102
     headers:
       Host: platform102.halalkhor.info
-- name: 🇲🇾 MY 03 - hellok
+- name: 🇲🇾 MY 02 - hellok
   type: vless
   server: 216.173.67.59
   port: 443
@@ -45,7 +31,7 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇲🇾 MY 04 - hellok
+- name: 🇲🇾 MY 03 - hellok
   type: vless
   server: platform101.golnamakcert.top
   port: 80
@@ -66,7 +52,6 @@ proxy-groups:
   - 🇲🇾 MY 01 - hellok
   - 🇲🇾 MY 02 - hellok
   - 🇲🇾 MY 03 - hellok
-  - 🇲🇾 MY 04 - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -75,6 +60,5 @@ proxy-groups:
   - 🇲🇾 MY 01 - hellok
   - 🇲🇾 MY 02 - hellok
   - 🇲🇾 MY 03 - hellok
-  - 🇲🇾 MY 04 - hellok
 rules:
 - MATCH,PROXIES
