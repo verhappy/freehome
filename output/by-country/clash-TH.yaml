@@ -34,6 +34,26 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇹🇭 TH 04 - hellok
+  type: vmess
+  server: 119.46.51.45
+  port: 37515
+  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇭 TH 05 - hellok
+  type: vmess
+  server: 119.46.51.45
+  port: 37515
+  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -42,6 +62,8 @@ proxy-groups:
   - 🇹🇭 TH 01 - hellok
   - 🇹🇭 TH 02 - hellok
   - 🇹🇭 TH 03 - hellok
+  - 🇹🇭 TH 04 - hellok
+  - 🇹🇭 TH 05 - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -50,5 +72,7 @@ proxy-groups:
   - 🇹🇭 TH 01 - hellok
   - 🇹🇭 TH 02 - hellok
   - 🇹🇭 TH 03 - hellok
+  - 🇹🇭 TH 04 - hellok
+  - 🇹🇭 TH 05 - hellok
 rules:
 - MATCH,PROXIES
