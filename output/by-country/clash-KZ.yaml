@@ -18,10 +18,10 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: 38.107.234.57
+      Host: ''
 - name: 🇰🇿 KZ 02 - hellok
   type: vmess
-  server: 3h-kazakhstan1.09vpn.com
+  server: 38.107.234.57
   port: 80
   uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
   alterId: 0
@@ -33,17 +33,17 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+      Host: 38.107.234.57
 - name: 🇰🇿 KZ 03 - hellok
   type: vless
-  server: 83.222.23.81
-  port: 38065
-  uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
+  server: 109.248.170.119
+  port: 13447
+  uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
+    public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
   servername: yahoo.com
   client-fingerprint: chrome
 - name: 🇰🇿 KZ 04 - hellok
@@ -60,8 +60,47 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: ''
+      Host: 3h-kazakhstan1.09vpn.com
 - name: 🇰🇿 KZ 05 - hellok
+  type: vmess
+  server: 3h-kazakhstan1.09vpn.com
+  port: 80
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+- name: 🇰🇿 KZ 06 - hellok
+  type: vless
+  server: 109.248.170.119
+  port: 13447
+  uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇰🇿 KZ 07 - hellok
+  type: vless
+  server: 83.222.23.81
+  port: 38065
+  uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇰🇿 KZ 08 - hellok
   type: vless
   server: 178.236.16.98
   port: 35728
@@ -73,6 +112,18 @@ proxies:
     public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
   servername: yahoo.com
   client-fingerprint: chrome
+- name: 🇰🇿 KZ 09 - hellok
+  type: vless
+  server: 109.248.170.119
+  port: 13447
+  uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
+  servername: yahoo.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -83,6 +134,10 @@ proxy-groups:
   - 🇰🇿 KZ 03 - hellok
   - 🇰🇿 KZ 04 - hellok
   - 🇰🇿 KZ 05 - hellok
+  - 🇰🇿 KZ 06 - hellok
+  - 🇰🇿 KZ 07 - hellok
+  - 🇰🇿 KZ 08 - hellok
+  - 🇰🇿 KZ 09 - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -93,5 +148,9 @@ proxy-groups:
   - 🇰🇿 KZ 03 - hellok
   - 🇰🇿 KZ 04 - hellok
   - 🇰🇿 KZ 05 - hellok
+  - 🇰🇿 KZ 06 - hellok
+  - 🇰🇿 KZ 07 - hellok
+  - 🇰🇿 KZ 08 - hellok
+  - 🇰🇿 KZ 09 - hellok
 rules:
 - MATCH,PROXIES
