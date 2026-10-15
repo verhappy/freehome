@@ -6,32 +6,18 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - hellok
   type: vless
-  server: 31.57.190.49
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132fp=unsafe
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇦🇪 阿联酋 (UAE) 02 - hellok
-  type: vless
-  server: 95.174.68.188
-  port: 14430
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vless
+    path: /
     headers:
-      Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 03 - hellok
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 02 - hellok
   type: vless
   server: uae.unixzone.us
   port: 22573
@@ -44,7 +30,7 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 04 - hellok
+- name: 🇦🇪 阿联酋 (UAE) 03 - hellok
   type: vless
   server: 31.57.190.17
   port: 443
@@ -58,21 +44,31 @@ proxies:
     path: /cart/docs/www/proxyip=108.160.132.132fp=unsafe
     headers:
       Host: lucasjow.us.ci
-- name: 🇦🇪 阿联酋 (UAE) 05 - hellok
-  type: vmess
-  server: nl-2a972c8052.shamanapp.online
-  port: 33736
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-  alterId: 0
-  cipher: auto
+- name: 🇦🇪 阿联酋 (UAE) 04 - hellok
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vmess-ws
+    path: /
     headers:
-      Host: ''
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 05 - hellok
+  type: vless
+  server: 45.59.120.217
+  port: 443
+  uuid: 8732f92b-ba85-48f7-92e4-ad029f1cd4e7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: mWxcYeYE-M3iE0RBjTzG88QI9kj2wivJDoIYDu_aG3w
+  servername: strm.yandex.net
+  client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 06 - hellok
   type: vless
   server: 31.57.190.49
@@ -89,21 +85,19 @@ proxies:
       Host: lucasjow.us.ci
 - name: 🇦🇪 阿联酋 (UAE) 07 - hellok
   type: vless
-  server: 31.57.190.17
+  server: 45.59.120.217
   port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  uuid: 8732f92b-ba85-48f7-92e4-ad029f1cd4e7
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132fp=unsafe
-    headers:
-      Host: lucasjow.us.ci
+  reality-opts:
+    public-key: mWxcYeYE-M3iE0RBjTzG88QI9kj2wivJDoIYDu_aG3w
+  servername: strm.yandex.net
+  client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 08 - hellok
   type: vless
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -116,20 +110,21 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 09 - hellok
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 31.57.190.49
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /
+    path: /cart/docs/www/proxyip=108.160.132.132fp=unsafe
     headers:
-      Host: uae.unixzone.us
+      Host: lucasjow.us.ci
 - name: 🇦🇪 阿联酋 (UAE) 10 - hellok
   type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -142,16 +137,59 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 11 - hellok
   type: vless
-  server: 45.59.120.217
+  server: 31.57.190.49
   port: 443
-  uuid: 8732f92b-ba85-48f7-92e4-ad029f1cd4e7
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: mWxcYeYE-M3iE0RBjTzG88QI9kj2wivJDoIYDu_aG3w
-  servername: strm.yandex.net
-  client-fingerprint: chrome
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇦🇪 阿联酋 (UAE) 12 - hellok
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 13 - hellok
+  type: vless
+  server: 31.57.190.49
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇦🇪 阿联酋 (UAE) 14 - hellok
+  type: vless
+  server: 31.57.190.17
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132fp=unsafe
+    headers:
+      Host: lucasjow.us.ci
 proxy-groups:
 - name: PROXIES
   type: select
@@ -168,6 +206,9 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 09 - hellok
   - 🇦🇪 阿联酋 (UAE) 10 - hellok
   - 🇦🇪 阿联酋 (UAE) 11 - hellok
+  - 🇦🇪 阿联酋 (UAE) 12 - hellok
+  - 🇦🇪 阿联酋 (UAE) 13 - hellok
+  - 🇦🇪 阿联酋 (UAE) 14 - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -184,5 +225,8 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 09 - hellok
   - 🇦🇪 阿联酋 (UAE) 10 - hellok
   - 🇦🇪 阿联酋 (UAE) 11 - hellok
+  - 🇦🇪 阿联酋 (UAE) 12 - hellok
+  - 🇦🇪 阿联酋 (UAE) 13 - hellok
+  - 🇦🇪 阿联酋 (UAE) 14 - hellok
 rules:
 - MATCH,PROXIES
