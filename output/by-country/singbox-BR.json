@@ -7,7 +7,9 @@
       "outbounds": [
         "auto",
         "🇧🇷 BR 01 - hellok",
-        "🇧🇷 BR 02 - hellok"
+        "🇧🇷 BR 02 - hellok",
+        "🇧🇷 BR 03 - hellok",
+        "🇧🇷 BR 04 - hellok"
       ]
     },
     {
@@ -15,7 +17,9 @@
       "tag": "auto",
       "outbounds": [
         "🇧🇷 BR 01 - hellok",
-        "🇧🇷 BR 02 - hellok"
+        "🇧🇷 BR 02 - hellok",
+        "🇧🇷 BR 03 - hellok",
+        "🇧🇷 BR 04 - hellok"
       ],
       "url": "https://www.google.com/generate_204"
     },
