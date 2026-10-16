@@ -6,6 +6,18 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - hellok
   type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 02 - hellok
+  type: vless
   server: 155.103.71.142
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
@@ -18,7 +30,19 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇹🇷 土耳其 (Turkey) 02 - hellok
+- name: 🇹🇷 土耳其 (Turkey) 03 - hellok
+  type: vless
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 04 - hellok
   type: vless
   server: 151.241.226.201
   port: 2053
@@ -30,7 +54,7 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇹🇷 土耳其 (Turkey) 03 - hellok
+- name: 🇹🇷 土耳其 (Turkey) 05 - hellok
   type: vless
   server: 155.103.71.142
   port: 443
@@ -44,30 +68,14 @@ proxies:
     path: /fp=chromefp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇹🇷 土耳其 (Turkey) 04 - hellok
+- name: 🇹🇷 土耳其 (Turkey) 06 - hellok
   type: vless
-  server: 151.241.226.201
+  server: test.keoplentuio.xyz
   port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 05 - hellok
-  type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -78,6 +86,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03 - hellok
   - 🇹🇷 土耳其 (Turkey) 04 - hellok
   - 🇹🇷 土耳其 (Turkey) 05 - hellok
+  - 🇹🇷 土耳其 (Turkey) 06 - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -88,5 +97,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03 - hellok
   - 🇹🇷 土耳其 (Turkey) 04 - hellok
   - 🇹🇷 土耳其 (Turkey) 05 - hellok
+  - 🇹🇷 土耳其 (Turkey) 06 - hellok
 rules:
 - MATCH,PROXIES
