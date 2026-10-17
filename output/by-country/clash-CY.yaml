@@ -7,16 +7,11 @@ proxies:
 - name: 🇨🇾 CY 01 - hellok
   type: vless
   server: 5.253.29.254
-  port: 14430
+  port: 10443
   uuid: c7c27192-60a5-4ce1-b613-95270d82309d
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.253.29.254
 - name: 🇨🇾 CY 02 - hellok
   type: vless
   server: 5.253.29.254
@@ -33,6 +28,14 @@ proxies:
 - name: 🇨🇾 CY 03 - hellok
   type: vless
   server: 5.253.29.254
+  port: 10443
+  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇾 CY 04 - hellok
+  type: vless
+  server: 5.253.29.254
   port: 14430
   uuid: c7c27192-60a5-4ce1-b613-95270d82309d
   udp: true
@@ -43,14 +46,6 @@ proxies:
     path: /vless
     headers:
       Host: 5.253.29.254
-- name: 🇨🇾 CY 04 - hellok
-  type: vless
-  server: 5.253.29.254
-  port: 10443
-  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇨🇾 CY 05 - hellok
   type: vless
   server: 5.253.29.254
@@ -62,11 +57,29 @@ proxies:
 - name: 🇨🇾 CY 06 - hellok
   type: vless
   server: 5.253.29.254
-  port: 10443
+  port: 14430
   uuid: c7c27192-60a5-4ce1-b613-95270d82309d
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.253.29.254
+- name: 🇨🇾 CY 07 - hellok
+  type: vless
+  server: 5.253.29.254
+  port: 14430
+  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.253.29.254
 proxy-groups:
 - name: PROXIES
   type: select
@@ -78,6 +91,7 @@ proxy-groups:
   - 🇨🇾 CY 04 - hellok
   - 🇨🇾 CY 05 - hellok
   - 🇨🇾 CY 06 - hellok
+  - 🇨🇾 CY 07 - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -89,5 +103,6 @@ proxy-groups:
   - 🇨🇾 CY 04 - hellok
   - 🇨🇾 CY 05 - hellok
   - 🇨🇾 CY 06 - hellok
+  - 🇨🇾 CY 07 - hellok
 rules:
 - MATCH,PROXIES
