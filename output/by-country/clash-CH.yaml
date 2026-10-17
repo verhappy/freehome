@@ -5,17 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 CH 01 - hellok
-  type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  type: ss
+  server: 132.243.175.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-  servername: www.apple.com
-  client-fingerprint: chrome
 - name: 🇨🇭 CH 02 - hellok
   type: ss
   server: 86.106.84.194
@@ -24,20 +19,6 @@ proxies:
   password: 2bf536a4bd6008511734a505d248de2c
   udp: true
 - name: 🇨🇭 CH 03 - hellok
-  type: ss
-  server: 132.243.175.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
-  udp: true
-- name: 🇨🇭 CH 04 - hellok
-  type: ss
-  server: 132.243.175.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
-  udp: true
-- name: 🇨🇭 CH 05 - hellok
   type: vless
   server: 208.69.78.217
   port: 2053
@@ -49,34 +30,13 @@ proxies:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇨🇭 CH 06 - hellok
-  type: vless
-  server: 185.18.250.245
-  port: 443
-  uuid: f77299ea-e13d-417d-8cdc-ce5566dfc94b
+- name: 🇨🇭 CH 04 - hellok
+  type: ss
+  server: 132.243.175.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edu.ruangguru.com.r3xxe.eu.cc
-  network: ws
-  ws-opts:
-    path: /nl-tw
-    headers:
-      Host: edu.ruangguru.com.r3xxe.eu.cc
-- name: 🇨🇭 CH 07 - hellok
-  type: vless
-  server: 129.151.64.169
-  port: 31867
-  uuid: 112c9db0-af6f-48b0-a59f-7677bed8e2d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -86,9 +46,6 @@ proxy-groups:
   - 🇨🇭 CH 02 - hellok
   - 🇨🇭 CH 03 - hellok
   - 🇨🇭 CH 04 - hellok
-  - 🇨🇭 CH 05 - hellok
-  - 🇨🇭 CH 06 - hellok
-  - 🇨🇭 CH 07 - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -98,8 +55,5 @@ proxy-groups:
   - 🇨🇭 CH 02 - hellok
   - 🇨🇭 CH 03 - hellok
   - 🇨🇭 CH 04 - hellok
-  - 🇨🇭 CH 05 - hellok
-  - 🇨🇭 CH 06 - hellok
-  - 🇨🇭 CH 07 - hellok
 rules:
 - MATCH,PROXIES
