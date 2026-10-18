@@ -6,16 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇴 NO 01 - hellok",
-        "🇳🇴 NO 02 - hellok"
+        "🇸🇨 SC 01 - hellok",
+        "🇸🇨 SC 02 - hellok"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇴 NO 01 - hellok",
-        "🇳🇴 NO 02 - hellok"
+        "🇸🇨 SC 01 - hellok",
+        "🇸🇨 SC 02 - hellok"
       ],
       "url": "https://www.google.com/generate_204"
     },

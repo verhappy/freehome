@@ -6,54 +6,6 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - hellok
   type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇫🇮 FI 02 - hellok
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 03 - hellok
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 04 - hellok
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 05 - hellok
-  type: vless
   server: mci.amir12.ir
   port: 2112
   uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
@@ -64,19 +16,7 @@ proxies:
     public-key: p8pUe3hwND5rhAti-yRQ5qMaIkNdhxOV1K1jpbtJlEQ
   servername: play.google.com
   client-fingerprint: chrome
-- name: 🇫🇮 FI 06 - hellok
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: random
-- name: 🇫🇮 FI 07 - hellok
+- name: 🇫🇮 FI 02 - hellok
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -89,6 +29,18 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
+- name: 🇫🇮 FI 03 - hellok
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -97,10 +49,6 @@ proxy-groups:
   - 🇫🇮 FI 01 - hellok
   - 🇫🇮 FI 02 - hellok
   - 🇫🇮 FI 03 - hellok
-  - 🇫🇮 FI 04 - hellok
-  - 🇫🇮 FI 05 - hellok
-  - 🇫🇮 FI 06 - hellok
-  - 🇫🇮 FI 07 - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -109,9 +57,5 @@ proxy-groups:
   - 🇫🇮 FI 01 - hellok
   - 🇫🇮 FI 02 - hellok
   - 🇫🇮 FI 03 - hellok
-  - 🇫🇮 FI 04 - hellok
-  - 🇫🇮 FI 05 - hellok
-  - 🇫🇮 FI 06 - hellok
-  - 🇫🇮 FI 07 - hellok
 rules:
 - MATCH,PROXIES
