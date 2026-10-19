@@ -6,12 +6,13 @@ log-level: info
 proxies:
 - name: 🇱🇰 LK 01 - hellok
   type: vless
-  server: free.sahanwickramasinghe.me
-  port: 80
-  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
+  server: 104.17.73.206
+  port: 8443
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: free.sahanwickramasinghe.me
   network: ws
   ws-opts:
     path: /
@@ -19,7 +20,7 @@ proxies:
       Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 LK 02 - hellok
   type: vless
-  server: 104.17.70.206
+  server: free.sahanwickramasinghe.me
   port: 8443
   uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
   udp: true
@@ -33,172 +34,7 @@ proxies:
       Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 LK 03 - hellok
   type: vless
-  server: 104.17.74.206
-  port: 8443
-  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.sahanwickramasinghe.me
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
-- name: 🇱🇰 LK 04 - hellok
-  type: vless
-  server: 51.75.67.209
-  port: 8443
-  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.sahanwickramasinghe.me
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
-- name: 🇱🇰 LK 05 - hellok
-  type: vless
   server: 104.17.70.206
-  port: 8443
-  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.sahanwickramasinghe.me
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
-- name: 🇱🇰 LK 06 - hellok
-  type: vless
-  server: free.sahanwickramasinghe.me
-  port: 80
-  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
-- name: 🇱🇰 LK 07 - hellok
-  type: vless
-  server: 104.17.71.206
-  port: 8443
-  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.sahanwickramasinghe.me
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
-- name: 🇱🇰 LK 08 - hellok
-  type: vless
-  server: 104.17.73.206
-  port: 8443
-  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.sahanwickramasinghe.me
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
-- name: 🇱🇰 LK 09 - hellok
-  type: vless
-  server: support.zoom.us
-  port: 80
-  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
-- name: 🇱🇰 LK 10 - hellok
-  type: vless
-  server: free.sahanwickramasinghe.me
-  port: 80
-  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
-- name: 🇱🇰 LK 11 - hellok
-  type: vless
-  server: 104.17.74.206
-  port: 8443
-  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.sahanwickramasinghe.me
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
-- name: 🇱🇰 LK 12 - hellok
-  type: vless
-  server: 51.75.67.209
-  port: 8443
-  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.sahanwickramasinghe.me
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
-- name: 🇱🇰 LK 13 - hellok
-  type: vless
-  server: free.sahanwickramasinghe.me
-  port: 8443
-  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.sahanwickramasinghe.me
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
-- name: 🇱🇰 LK 14 - hellok
-  type: vless
-  server: 104.17.72.206
-  port: 8443
-  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free.sahanwickramasinghe.me
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
-- name: 🇱🇰 LK 15 - hellok
-  type: vless
-  server: 104.17.71.206
   port: 8443
   uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
   udp: true
@@ -218,18 +54,6 @@ proxy-groups:
   - 🇱🇰 LK 01 - hellok
   - 🇱🇰 LK 02 - hellok
   - 🇱🇰 LK 03 - hellok
-  - 🇱🇰 LK 04 - hellok
-  - 🇱🇰 LK 05 - hellok
-  - 🇱🇰 LK 06 - hellok
-  - 🇱🇰 LK 07 - hellok
-  - 🇱🇰 LK 08 - hellok
-  - 🇱🇰 LK 09 - hellok
-  - 🇱🇰 LK 10 - hellok
-  - 🇱🇰 LK 11 - hellok
-  - 🇱🇰 LK 12 - hellok
-  - 🇱🇰 LK 13 - hellok
-  - 🇱🇰 LK 14 - hellok
-  - 🇱🇰 LK 15 - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -238,17 +62,5 @@ proxy-groups:
   - 🇱🇰 LK 01 - hellok
   - 🇱🇰 LK 02 - hellok
   - 🇱🇰 LK 03 - hellok
-  - 🇱🇰 LK 04 - hellok
-  - 🇱🇰 LK 05 - hellok
-  - 🇱🇰 LK 06 - hellok
-  - 🇱🇰 LK 07 - hellok
-  - 🇱🇰 LK 08 - hellok
-  - 🇱🇰 LK 09 - hellok
-  - 🇱🇰 LK 10 - hellok
-  - 🇱🇰 LK 11 - hellok
-  - 🇱🇰 LK 12 - hellok
-  - 🇱🇰 LK 13 - hellok
-  - 🇱🇰 LK 14 - hellok
-  - 🇱🇰 LK 15 - hellok
 rules:
 - MATCH,PROXIES
