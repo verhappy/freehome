@@ -8,9 +8,7 @@
         "auto",
         "🇨🇳 CN 01 - hellok",
         "🇨🇳 CN 02 - hellok",
-        "🇨🇳 CN 03 - hellok",
-        "🇨🇳 CN 04 - hellok",
-        "🇨🇳 CN 05 - hellok"
+        "🇨🇳 CN 03 - hellok"
       ]
     },
     {
@@ -19,9 +17,7 @@
       "outbounds": [
         "🇨🇳 CN 01 - hellok",
         "🇨🇳 CN 02 - hellok",
-        "🇨🇳 CN 03 - hellok",
-        "🇨🇳 CN 04 - hellok",
-        "🇨🇳 CN 05 - hellok"
+        "🇨🇳 CN 03 - hellok"
       ],
       "url": "https://www.google.com/generate_204"
     },
