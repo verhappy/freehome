@@ -15,7 +15,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /fp=chromefp=chrome
     headers:
       Host: ccc.010304.xyz
 - name: 🇦🇪 阿联酋 (UAE) 02 - hellok
@@ -46,6 +46,59 @@ proxies:
       Host: 95.174.68.188
 - name: 🇦🇪 阿联酋 (UAE) 04 - hellok
   type: vless
+  server: 95.174.68.188
+  port: 14430
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 05 - hellok
+  type: vless
+  server: 31.57.190.89
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇦🇪 阿联酋 (UAE) 06 - hellok
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 07 - hellok
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 08 - hellok
+  type: vless
   server: 31.57.190.89
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
@@ -58,47 +111,34 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
-- name: 🇦🇪 阿联酋 (UAE) 05 - hellok
+- name: 🇦🇪 阿联酋 (UAE) 09 - hellok
   type: vless
-  server: 95.174.68.188
-  port: 14430
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 06 - hellok
-  type: vless
-  server: 95.174.68.188
-  port: 14430
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 07 - hellok
-  type: vless
-  server: 31.57.190.49
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  server: 57.129.130.10
+  port: 52014
+  uuid: bca740c6-6704-48ba-99da-7d7a31768d73
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: lucasjow.us.ci
+  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
   network: ws
   ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132fp=unsafe
+    path: /@Marisa_kristi
     headers:
-      Host: lucasjow.us.ci
-- name: 🇦🇪 阿联酋 (UAE) 08 - hellok
+      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 10 - hellok
+  type: vless
+  server: 95.174.68.188
+  port: 14430
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 11 - hellok
   type: vless
   server: 185.253.116.33
   port: 14430
@@ -111,20 +151,6 @@ proxies:
     path: /vless
     headers:
       Host: 185.253.116.33
-- name: 🇦🇪 阿联酋 (UAE) 09 - hellok
-  type: vless
-  server: 31.57.190.89
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chromefp=chrome
-    headers:
-      Host: ccc.010304.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -139,6 +165,8 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 07 - hellok
   - 🇦🇪 阿联酋 (UAE) 08 - hellok
   - 🇦🇪 阿联酋 (UAE) 09 - hellok
+  - 🇦🇪 阿联酋 (UAE) 10 - hellok
+  - 🇦🇪 阿联酋 (UAE) 11 - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -153,5 +181,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 07 - hellok
   - 🇦🇪 阿联酋 (UAE) 08 - hellok
   - 🇦🇪 阿联酋 (UAE) 09 - hellok
+  - 🇦🇪 阿联酋 (UAE) 10 - hellok
+  - 🇦🇪 阿联酋 (UAE) 11 - hellok
 rules:
 - MATCH,PROXIES
