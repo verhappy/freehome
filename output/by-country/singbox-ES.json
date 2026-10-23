@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇸 西班牙 (Spain) 01 - hellok"
+        "🇪🇸 西班牙 (Spain) 01 - hellok",
+        "🇪🇸 西班牙 (Spain) 02 - hellok"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇸 西班牙 (Spain) 01 - hellok"
+        "🇪🇸 西班牙 (Spain) 01 - hellok",
+        "🇪🇸 西班牙 (Spain) 02 - hellok"
       ],
       "url": "https://www.google.com/generate_204"
     },
