@@ -4,31 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇿 UZ 01 - hellok
-  type: vless
-  server: 157.22.128.7
+- name: 🇪🇪 EE 01 - hellok
+  type: vmess
+  server: eu3.998998.best
   port: 443
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: free.cndyw.ggff.net
+  servername: server40.9966338.xyz
   network: ws
   ws-opts:
-    path: pyip=bpb.yousef.isegaro.comfp=random
+    path: /aiaiai
     headers:
-      Host: free.cndyw.ggff.net
+      Host: server40.9966338.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇿 UZ 01 - hellok
+  - 🇪🇪 EE 01 - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇿 UZ 01 - hellok
+  - 🇪🇪 EE 01 - hellok
 rules:
 - MATCH,PROXIES
