@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇳 印度 (India) 01 (家宽) - hellok"
+        "🇸🇨 SC 01 - hellok",
+        "🇸🇨 SC 02 - hellok"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇳 印度 (India) 01 (家宽) - hellok"
+        "🇸🇨 SC 01 - hellok",
+        "🇸🇨 SC 02 - hellok"
       ],
       "url": "https://www.google.com/generate_204"
     },
