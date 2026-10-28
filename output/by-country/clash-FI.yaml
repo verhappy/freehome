@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - hellok
   type: vless
-  server: 199.232.239.239
-  port: 443
-  uuid: 36805edb-1e85-4199-a59f-117010b70017
+  server: 65.109.212.193
+  port: 465
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: firefox.com
+  servername: hw3.divarkhaghazi.com.
   network: ws
   ws-opts:
-    path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel?ed=2056
+    path: /
     headers:
-      Host: mpkoe7ypcibr80p102020123.global.ssl.fastly.net
+      Host: hw3.divarkhaghazi.com.
 - name: 🇫🇮 FI 02 - hellok
   type: vless
   server: 95.216.27.15
@@ -29,8 +29,21 @@ proxies:
   reality-opts:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇫🇮 FI 03 - hellok
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 04 - hellok
   type: vless
   server: hw3.divarkhaghazi.com
   port: 465
@@ -44,7 +57,19 @@ proxies:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 FI 04 - hellok
+- name: 🇫🇮 FI 05 - hellok
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 06 - hellok
   type: vless
   server: 199.232.239.239
   port: 443
@@ -58,51 +83,21 @@ proxies:
     path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel?ed=2056
     headers:
       Host: mpkoe7ypcibr80p102020123.global.ssl.fastly.net
-- name: 🇫🇮 FI 05 - hellok
-  type: vless
-  server: hw3.divarkhaghazi.com
-  port: 465
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hw3.divarkhaghazi.com.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 FI 06 - hellok
-  type: vless
-  server: 65.109.212.193
-  port: 465
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: hw3.divarkhaghazi.com.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
 - name: 🇫🇮 FI 07 - hellok
   type: vless
-  server: 65.109.212.193
-  port: 465
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hw3.divarkhaghazi.com.
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 08 - hellok
   type: vless
-  server: 65.109.212.193
+  server: hw3.divarkhaghazi.com
   port: 465
   uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
   udp: true
@@ -126,6 +121,60 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
   client-fingerprint: firefox
+- name: 🇫🇮 FI 10 - hellok
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 11 - hellok
+  type: vless
+  server: 65.109.212.193
+  port: 465
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hw3.divarkhaghazi.com.
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw3.divarkhaghazi.com.
+- name: 🇫🇮 FI 12 - hellok
+  type: vless
+  server: 65.109.212.193
+  port: 465
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hw3.divarkhaghazi.com.
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw3.divarkhaghazi.com.
+- name: 🇫🇮 FI 13 - hellok
+  type: vless
+  server: 65.109.212.193
+  port: 465
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hw3.divarkhaghazi.com.
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw3.divarkhaghazi.com.
 proxy-groups:
 - name: PROXIES
   type: select
@@ -140,6 +189,10 @@ proxy-groups:
   - 🇫🇮 FI 07 - hellok
   - 🇫🇮 FI 08 - hellok
   - 🇫🇮 FI 09 - hellok
+  - 🇫🇮 FI 10 - hellok
+  - 🇫🇮 FI 11 - hellok
+  - 🇫🇮 FI 12 - hellok
+  - 🇫🇮 FI 13 - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -154,5 +207,9 @@ proxy-groups:
   - 🇫🇮 FI 07 - hellok
   - 🇫🇮 FI 08 - hellok
   - 🇫🇮 FI 09 - hellok
+  - 🇫🇮 FI 10 - hellok
+  - 🇫🇮 FI 11 - hellok
+  - 🇫🇮 FI 12 - hellok
+  - 🇫🇮 FI 13 - hellok
 rules:
 - MATCH,PROXIES

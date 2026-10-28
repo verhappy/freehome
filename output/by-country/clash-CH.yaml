@@ -24,38 +24,6 @@ proxies:
   servername: www.apple.com
   client-fingerprint: random
 - name: 🇨🇭 CH 03 - hellok
-  type: vless
-  server: 149.33.15.213
-  port: 443
-  uuid: 054362fb-e485-4a3f-9568-4c5b0f60e074
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: swz.proxyplankton.ru
-- name: 🇨🇭 CH 04 - hellok
-  type: vless
-  server: 149.33.15.213
-  port: 443
-  uuid: 054362fb-e485-4a3f-9568-4c5b0f60e074
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: swz.proxyplankton.ru
-- name: 🇨🇭 CH 05 - hellok
-  type: vless
-  server: 46.101.46.169
-  port: 486
-  uuid: 16bf3359-e7d8-4de6-86a0-6d65cf793b56
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-- name: 🇨🇭 CH 06 - hellok
   type: ss
   server: 132.243.175.144
   port: 8388
@@ -70,9 +38,6 @@ proxy-groups:
   - 🇨🇭 CH 01 - hellok
   - 🇨🇭 CH 02 - hellok
   - 🇨🇭 CH 03 - hellok
-  - 🇨🇭 CH 04 - hellok
-  - 🇨🇭 CH 05 - hellok
-  - 🇨🇭 CH 06 - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -81,8 +46,5 @@ proxy-groups:
   - 🇨🇭 CH 01 - hellok
   - 🇨🇭 CH 02 - hellok
   - 🇨🇭 CH 03 - hellok
-  - 🇨🇭 CH 04 - hellok
-  - 🇨🇭 CH 05 - hellok
-  - 🇨🇭 CH 06 - hellok
 rules:
 - MATCH,PROXIES

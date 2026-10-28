@@ -6,14 +6,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇩 ID 01 - hellok"
+        "🇮🇩 ID 01 - hellok",
+        "🇮🇩 ID 02 - hellok",
+        "🇮🇩 ID 03 - hellok",
+        "🇮🇩 ID 04 - hellok",
+        "🇮🇩 ID 05 - hellok"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇩 ID 01 - hellok"
+        "🇮🇩 ID 01 - hellok",
+        "🇮🇩 ID 02 - hellok",
+        "🇮🇩 ID 03 - hellok",
+        "🇮🇩 ID 04 - hellok",
+        "🇮🇩 ID 05 - hellok"
       ],
       "url": "https://www.google.com/generate_204"
     },
