@@ -15,7 +15,7 @@ proxies:
   servername: in001.zestapp778.com
 - name: 🇮🇩 ID 02 - hellok
   type: vless
-  server: in001.zestapp778.com
+  server: 130.94.95.198
   port: 57353
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -24,7 +24,7 @@ proxies:
   servername: in001.zestapp778.com
 - name: 🇮🇩 ID 03 - hellok
   type: vless
-  server: 130.94.95.198
+  server: in001.zestapp778.com
   port: 57353
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -33,7 +33,7 @@ proxies:
   servername: in001.zestapp778.com
 - name: 🇮🇩 ID 04 - hellok
   type: vless
-  server: 130.94.95.198
+  server: in001.zestapp778.com
   port: 57353
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -42,7 +42,25 @@ proxies:
   servername: in001.zestapp778.com
 - name: 🇮🇩 ID 05 - hellok
   type: vless
-  server: in001.zestapp778.com
+  server: 130.94.95.198
+  port: 57353
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: in001.zestapp778.com
+- name: 🇮🇩 ID 06 - hellok
+  type: vless
+  server: 130.94.95.198
+  port: 57353
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: in001.zestapp778.com
+- name: 🇮🇩 ID 07 - hellok
+  type: vless
+  server: 130.94.95.198
   port: 57353
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   udp: true
@@ -59,6 +77,8 @@ proxy-groups:
   - 🇮🇩 ID 03 - hellok
   - 🇮🇩 ID 04 - hellok
   - 🇮🇩 ID 05 - hellok
+  - 🇮🇩 ID 06 - hellok
+  - 🇮🇩 ID 07 - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -69,5 +89,7 @@ proxy-groups:
   - 🇮🇩 ID 03 - hellok
   - 🇮🇩 ID 04 - hellok
   - 🇮🇩 ID 05 - hellok
+  - 🇮🇩 ID 06 - hellok
+  - 🇮🇩 ID 07 - hellok
 rules:
 - MATCH,PROXIES
