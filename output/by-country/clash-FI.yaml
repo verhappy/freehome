@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - hellok
   type: vless
-  server: 65.109.210.221
+  server: 65.109.211.81
   port: 465
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hw3.divarkhaghazi.com.
+  servername: hw6.divarkhaghazi.com.
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: hw3.divarkhaghazi.com.
+      Host: hw6.divarkhaghazi.com.
 - name: 🇫🇮 FI 02 - hellok
   type: vless
   server: hw3.divarkhaghazi.com
@@ -34,18 +34,18 @@ proxies:
       Host: hw3.divarkhaghazi.com.
 - name: 🇫🇮 FI 03 - hellok
   type: vless
-  server: 65.109.211.81
+  server: 65.109.210.221
   port: 465
-  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hw6.divarkhaghazi.com.
+  servername: hw3.divarkhaghazi.com.
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: hw6.divarkhaghazi.com.
+      Host: hw3.divarkhaghazi.com.
 - name: 🇫🇮 FI 04 - hellok
   type: vless
   server: 45.144.234.157
@@ -75,18 +75,6 @@ proxies:
       Host: hw3.divarkhaghazi.com.
 - name: 🇫🇮 FI 06 - hellok
   type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇫🇮 FI 07 - hellok
-  type: vless
   server: 65.109.210.221
   port: 465
   uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
@@ -110,7 +98,6 @@ proxy-groups:
   - 🇫🇮 FI 04 - hellok
   - 🇫🇮 FI 05 - hellok
   - 🇫🇮 FI 06 - hellok
-  - 🇫🇮 FI 07 - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -122,6 +109,5 @@ proxy-groups:
   - 🇫🇮 FI 04 - hellok
   - 🇫🇮 FI 05 - hellok
   - 🇫🇮 FI 06 - hellok
-  - 🇫🇮 FI 07 - hellok
 rules:
 - MATCH,PROXIES
