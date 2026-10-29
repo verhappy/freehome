@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇨🇳 CN 01 - hellok",
+        "🇨🇳 CN 02 - hellok",
+        "🇨🇳 CN 03 - hellok",
+        "🇨🇳 CN 04 - hellok",
+        "🇨🇳 CN 05 - hellok",
+        "🇨🇳 CN 06 - hellok"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇨🇳 CN 01 - hellok",
+        "🇨🇳 CN 02 - hellok",
+        "🇨🇳 CN 03 - hellok",
+        "🇨🇳 CN 04 - hellok",
+        "🇨🇳 CN 05 - hellok",
+        "🇨🇳 CN 06 - hellok"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
