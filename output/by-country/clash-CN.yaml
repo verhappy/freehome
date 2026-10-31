@@ -20,7 +20,7 @@ proxies:
       Host: vpn.cintaku.qzz.io
 - name: 🇨🇳 CN 02 - hellok
   type: vless
-  server: 188.114.98.0
+  server: 104.17.11.191
   port: 443
   uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
   udp: true
@@ -48,7 +48,7 @@ proxies:
       Host: vpn.cintaku.qzz.io
 - name: 🇨🇳 CN 04 - hellok
   type: vless
-  server: 104.17.11.191
+  server: vpn.cintaku.qzz.io
   port: 443
   uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
   udp: true
@@ -61,6 +61,20 @@ proxies:
     headers:
       Host: vpn.cintaku.qzz.io
 - name: 🇨🇳 CN 05 - hellok
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vpn.cintaku.qzz.io
+  network: ws
+  ws-opts:
+    path: /vlessws
+    headers:
+      Host: vpn.cintaku.qzz.io
+- name: 🇨🇳 CN 06 - hellok
   type: vless
   server: 8.35.211.242
   port: 443
@@ -84,6 +98,7 @@ proxy-groups:
   - 🇨🇳 CN 03 - hellok
   - 🇨🇳 CN 04 - hellok
   - 🇨🇳 CN 05 - hellok
+  - 🇨🇳 CN 06 - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -94,5 +109,6 @@ proxy-groups:
   - 🇨🇳 CN 03 - hellok
   - 🇨🇳 CN 04 - hellok
   - 🇨🇳 CN 05 - hellok
+  - 🇨🇳 CN 06 - hellok
 rules:
 - MATCH,PROXIES
