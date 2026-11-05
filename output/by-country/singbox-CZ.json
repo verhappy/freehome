@@ -6,14 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇭 PH 01 - hellok"
+        "🇨🇿 CZ 01 - hellok",
+        "🇨🇿 CZ 02 - hellok",
+        "🇨🇿 CZ 03 - hellok",
+        "🇨🇿 CZ 04 - hellok"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇭 PH 01 - hellok"
+        "🇨🇿 CZ 01 - hellok",
+        "🇨🇿 CZ 02 - hellok",
+        "🇨🇿 CZ 03 - hellok",
+        "🇨🇿 CZ 04 - hellok"
       ],
       "url": "https://www.google.com/generate_204"
     },
