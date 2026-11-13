@@ -6,10 +6,10 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - hellok
   type: ss
-  server: 62.182.193.228
+  server: 70.34.212.124
   port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 2e555e46dbc421452416834962fd014f
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
   udp: true
 - name: 🇸🇪 SE 02 - hellok
   type: ss
@@ -32,13 +32,6 @@ proxies:
     headers:
       Host: 5.178.109.174
 - name: 🇸🇪 SE 04 - hellok
-  type: ss
-  server: 70.34.212.124
-  port: 8388
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
-  udp: true
-- name: 🇸🇪 SE 05 - hellok
   type: vless
   server: 138.124.49.108
   port: 8443
@@ -49,7 +42,7 @@ proxies:
   servername: fs.qicai99.com
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /fp=chromefp=chrome
     headers:
       Host: fs.qicai99.com
 proxy-groups:
@@ -61,7 +54,6 @@ proxy-groups:
   - 🇸🇪 SE 02 - hellok
   - 🇸🇪 SE 03 - hellok
   - 🇸🇪 SE 04 - hellok
-  - 🇸🇪 SE 05 - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -71,6 +63,5 @@ proxy-groups:
   - 🇸🇪 SE 02 - hellok
   - 🇸🇪 SE 03 - hellok
   - 🇸🇪 SE 04 - hellok
-  - 🇸🇪 SE 05 - hellok
 rules:
 - MATCH,PROXIES
