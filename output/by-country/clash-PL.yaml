@@ -4,31 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇬 BG 01 - hellok
+- name: 🇵🇱 PL 01 - hellok
   type: vless
-  server: 185.197.193.137
+  server: d58daft.plp1.h1cloud.net
   port: 443
-  uuid: 313b84fa-b922-500f-9b65-acb67c040cc0
+  uuid: c82031be-e90f-4b15-ab4f-7ccef236d3ca
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: us2.v2less.site
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: us2.v2less.site
+  reality-opts:
+    public-key: ixnCbdlT5sAVd-ilp2nG11CvnNsBCf9xPD56TlXxlR4
+  servername: d58daft.plp1.h1cloud.net
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇬 BG 01 - hellok
+  - 🇵🇱 PL 01 - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇬 BG 01 - hellok
+  - 🇵🇱 PL 01 - hellok
 rules:
 - MATCH,PROXIES
