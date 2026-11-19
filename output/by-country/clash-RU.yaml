@@ -13,18 +13,18 @@ proxies:
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - hellok
   type: vless
-  server: 31.177.111.134
+  server: 193.233.219.98
   port: 443
-  uuid: fd90e601-a56c-42b8-aab7-aa02d26fcb04
+  uuid: 265ecca2-4733-49de-b2c9-ed7f0e999655
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: k6t8wxun3s.schoolbag.top
+  servername: daily-author.ru
   network: ws
   ws-opts:
-    path: /static/metrics/86d07ea17ea1/
+    path: /api/vless
     headers:
-      Host: ns4pmajwas.flowersgood.top
+      Host: vpn-rating.space
 proxy-groups:
 - name: PROXIES
   type: select
