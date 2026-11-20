@@ -6,6 +6,48 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - hellok
   type: vless
+  server: 104.18.63.135
+  port: 2083
+  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vipfree.dr-ping.ir
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vipfree.dr-ping.ir
+- name: 🇫🇮 FI 02 - hellok
+  type: vless
+  server: 198.202.24.142
+  port: 2083
+  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vipfree.dr-ping.ir
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vipfree.dr-ping.ir
+- name: 🇫🇮 FI 03 - hellok
+  type: vless
+  server: 162.159.160.117
+  port: 2083
+  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vipfree.dr-ping.ir
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vipfree.dr-ping.ir
+- name: 🇫🇮 FI 04 - hellok
+  type: vless
   server: 45.144.234.157
   port: 14430
   uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
@@ -17,7 +59,90 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 FI 02 - hellok
+- name: 🇫🇮 FI 05 - hellok
+  type: vless
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 FI 06 - hellok
+  type: vless
+  server: 162.159.237.118
+  port: 2083
+  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vipfree.dr-ping.ir
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vipfree.dr-ping.ir
+- name: 🇫🇮 FI 07 - hellok
+  type: vless
+  server: 172.64.79.163
+  port: 2083
+  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vipfree.dr-ping.ir
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vipfree.dr-ping.ir
+- name: 🇫🇮 FI 08 - hellok
+  type: vless
+  server: 198.202.24.142
+  port: 2083
+  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vipfree.dr-ping.ir
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vipfree.dr-ping.ir
+- name: 🇫🇮 FI 09 - hellok
+  type: vless
+  server: 104.17.145.145
+  port: 2083
+  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vipfree.dr-ping.ir
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vipfree.dr-ping.ir
+- name: 🇫🇮 FI 10 - hellok
+  type: vless
+  server: 172.67.67.89
+  port: 2083
+  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vipfree.dr-ping.ir
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vipfree.dr-ping.ir
+- name: 🇫🇮 FI 11 - hellok
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -37,6 +162,15 @@ proxy-groups:
   - AUTO
   - 🇫🇮 FI 01 - hellok
   - 🇫🇮 FI 02 - hellok
+  - 🇫🇮 FI 03 - hellok
+  - 🇫🇮 FI 04 - hellok
+  - 🇫🇮 FI 05 - hellok
+  - 🇫🇮 FI 06 - hellok
+  - 🇫🇮 FI 07 - hellok
+  - 🇫🇮 FI 08 - hellok
+  - 🇫🇮 FI 09 - hellok
+  - 🇫🇮 FI 10 - hellok
+  - 🇫🇮 FI 11 - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -44,5 +178,14 @@ proxy-groups:
   proxies:
   - 🇫🇮 FI 01 - hellok
   - 🇫🇮 FI 02 - hellok
+  - 🇫🇮 FI 03 - hellok
+  - 🇫🇮 FI 04 - hellok
+  - 🇫🇮 FI 05 - hellok
+  - 🇫🇮 FI 06 - hellok
+  - 🇫🇮 FI 07 - hellok
+  - 🇫🇮 FI 08 - hellok
+  - 🇫🇮 FI 09 - hellok
+  - 🇫🇮 FI 10 - hellok
+  - 🇫🇮 FI 11 - hellok
 rules:
 - MATCH,PROXIES
