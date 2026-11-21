@@ -14,7 +14,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: xmfhlpy.com
 - name: 🇦🇹 AT 02 - hellok
   type: ss
   server: 82.110.60.9
@@ -32,7 +32,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xmfhlpy.com
+  servername: ''
 - name: 🇦🇹 AT 04 - hellok
   type: ss
   server: 82.110.60.9
