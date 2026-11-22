@@ -6,16 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 IE 01 - hellok",
-        "🇮🇪 IE 02 - hellok"
+        "🇮🇶 IQ 01 - hellok",
+        "🇮🇶 IQ 02 - hellok"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 IE 01 - hellok",
-        "🇮🇪 IE 02 - hellok"
+        "🇮🇶 IQ 01 - hellok",
+        "🇮🇶 IQ 02 - hellok"
       ],
       "url": "https://www.google.com/generate_204"
     },
