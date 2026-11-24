@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇦🇹 AT 01 - hellok
   type: vmess
-  server: leviko-at3530.shopingggg.ir
+  server: 154.47.19.225
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -14,7 +14,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: xmfhlpy.com
 - name: 🇦🇹 AT 02 - hellok
   type: ss
   server: 82.110.60.9
@@ -24,7 +24,7 @@ proxies:
   udp: true
 - name: 🇦🇹 AT 03 - hellok
   type: vmess
-  server: leviko-at3530.shopingggg.ir
+  server: 154.47.19.225
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -34,8 +34,15 @@ proxies:
   skip-cert-verify: true
   servername: ''
 - name: 🇦🇹 AT 04 - hellok
+  type: ss
+  server: 82.110.60.9
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇦🇹 AT 05 - hellok
   type: vmess
-  server: 154.47.19.225
+  server: leviko-at3530.shopingggg.ir
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -43,14 +50,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 154.47.19.225
-- name: 🇦🇹 AT 05 - hellok
-  type: ss
-  server: 82.110.60.9
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
+  servername: ''
 - name: 🇦🇹 AT 06 - hellok
   type: ss
   server: 152.53.1.57
@@ -69,50 +69,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 154.47.19.225
-- name: 🇦🇹 AT 08 - hellok
-  type: vmess
-  server: 154.47.19.225
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xmfhlpy.com
-- name: 🇦🇹 AT 09 - hellok
-  type: vmess
-  server: 154.47.19.225
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 154.47.19.225
-- name: 🇦🇹 AT 10 - hellok
-  type: vmess
-  server: 154.47.19.225
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xmfhlpy.com
-- name: 🇦🇹 AT 11 - hellok
-  type: vmess
-  server: 154.47.19.225
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -125,10 +81,6 @@ proxy-groups:
   - 🇦🇹 AT 05 - hellok
   - 🇦🇹 AT 06 - hellok
   - 🇦🇹 AT 07 - hellok
-  - 🇦🇹 AT 08 - hellok
-  - 🇦🇹 AT 09 - hellok
-  - 🇦🇹 AT 10 - hellok
-  - 🇦🇹 AT 11 - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -141,9 +93,5 @@ proxy-groups:
   - 🇦🇹 AT 05 - hellok
   - 🇦🇹 AT 06 - hellok
   - 🇦🇹 AT 07 - hellok
-  - 🇦🇹 AT 08 - hellok
-  - 🇦🇹 AT 09 - hellok
-  - 🇦🇹 AT 10 - hellok
-  - 🇦🇹 AT 11 - hellok
 rules:
 - MATCH,PROXIES
