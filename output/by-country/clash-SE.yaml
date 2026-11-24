@@ -21,7 +21,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: xmfhlpy.com
 - name: 🇸🇪 SE 03 - hellok
   type: vmess
   server: 138.199.55.230
@@ -33,6 +33,41 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
+- name: 🇸🇪 SE 04 - hellok
+  type: vless
+  server: 5.178.109.174
+  port: 14430
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
+- name: 🇸🇪 SE 05 - hellok
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇸🇪 SE 06 - hellok
+  type: vmess
+  server: 138.199.55.230
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xmfhlpy.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,6 +76,9 @@ proxy-groups:
   - 🇸🇪 SE 01 - hellok
   - 🇸🇪 SE 02 - hellok
   - 🇸🇪 SE 03 - hellok
+  - 🇸🇪 SE 04 - hellok
+  - 🇸🇪 SE 05 - hellok
+  - 🇸🇪 SE 06 - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -49,5 +87,8 @@ proxy-groups:
   - 🇸🇪 SE 01 - hellok
   - 🇸🇪 SE 02 - hellok
   - 🇸🇪 SE 03 - hellok
+  - 🇸🇪 SE 04 - hellok
+  - 🇸🇪 SE 05 - hellok
+  - 🇸🇪 SE 06 - hellok
 rules:
 - MATCH,PROXIES
