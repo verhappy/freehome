@@ -92,6 +92,20 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 08 - hellok
+  type: vless
+  server: 104.25.128.15
+  port: 443
+  uuid: db906786-8c49-4b17-9182-cea680ef954d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: krc.80782636.xyz
+  network: ws
+  ws-opts:
+    path: /kw7x2mq9
+    headers:
+      Host: krc.80782636.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -104,6 +118,7 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 05 - hellok
   - 🇰🇷 韩国 (South Korea) 06 - hellok
   - 🇰🇷 韩国 (South Korea) 07 - hellok
+  - 🇰🇷 韩国 (South Korea) 08 - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -116,5 +131,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 05 - hellok
   - 🇰🇷 韩国 (South Korea) 06 - hellok
   - 🇰🇷 韩国 (South Korea) 07 - hellok
+  - 🇰🇷 韩国 (South Korea) 08 - hellok
 rules:
 - MATCH,PROXIES

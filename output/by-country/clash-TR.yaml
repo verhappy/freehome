@@ -15,27 +15,17 @@ proxies:
   servername: turkey-ip1.mmdaqaorg.xyz
 - name: 🇹🇷 土耳其 (Turkey) 02 - hellok
   type: vless
-  server: 45.74.158.105
-  port: 443
-  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  server: v2new.nimbaha9.ir
+  port: 8080
+  uuid: 308230a0-0097-4158-98d7-8f09bf339d60
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: accessfooter.cleanfoodshop.org
   network: ws
   ws-opts:
-    path: /media/ws/
+    path: /XDS45
     headers:
-      Host: accessfooter.cleanfoodshop.org
-- name: 🇹🇷 土耳其 (Turkey) 03 - hellok
-  type: vless
-  server: 143.246.136.128
-  port: 50738
-  uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: turkey-ip1.mmdaqaorg.xyz
+      Host: v2new.nimbaha9.ir
 proxy-groups:
 - name: PROXIES
   type: select
@@ -43,7 +33,6 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - hellok
   - 🇹🇷 土耳其 (Turkey) 02 - hellok
-  - 🇹🇷 土耳其 (Turkey) 03 - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -51,6 +40,5 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - hellok
   - 🇹🇷 土耳其 (Turkey) 02 - hellok
-  - 🇹🇷 土耳其 (Turkey) 03 - hellok
 rules:
 - MATCH,PROXIES

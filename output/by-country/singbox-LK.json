@@ -6,14 +6,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 - hellok"
+        "🇱🇰 LK 01 - hellok",
+        "🇱🇰 LK 02 - hellok",
+        "🇱🇰 LK 03 - hellok",
+        "🇱🇰 LK 04 - hellok",
+        "🇱🇰 LK 05 - hellok"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 - hellok"
+        "🇱🇰 LK 01 - hellok",
+        "🇱🇰 LK 02 - hellok",
+        "🇱🇰 LK 03 - hellok",
+        "🇱🇰 LK 04 - hellok",
+        "🇱🇰 LK 05 - hellok"
       ],
       "url": "https://www.google.com/generate_204"
     },
