@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - hellok
   type: vless
-  server: 104.24.0.1
+  server: 104.24.31.89
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -20,7 +20,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 02 - hellok
   type: vless
-  server: 104.19.48.107
+  server: 104.24.0.1
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -33,107 +33,20 @@ proxies:
     headers:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 03 - hellok
-  type: vmess
-  server: 104.21.91.53
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 104.16.10.56
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: v2ray1.dozapp.xyz
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /lMnsZUN4/
+    path: /tyxyws
     headers:
-      Host: v2ray1.dozapp.xyz
+      Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 04 - hellok
-  type: vless
-  server: 104.16.111.102
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 05 - hellok
-  type: vless
-  server: 104.21.0.87
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 06 - hellok
-  type: vless
-  server: 104.21.94.203
-  port: 443
-  uuid: 364D2D52-E61E-4E52-80EC-2BC6BDF15349
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fr-free.fastestrelay.com
-  network: ws
-  ws-opts:
-    path: /700gvl
-    headers:
-      Host: fr-free.fastestrelay.com
-- name: 🌐 其他地区 (Other) 07 - hellok
-  type: vmess
-  server: 104.21.0.1
-  port: 80
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: vmess.lbw666.dpdns.org
-- name: 🌐 其他地区 (Other) 08 - hellok
-  type: vless
-  server: 172.67.139.189
-  port: 443
-  uuid: 364D2D52-E61E-4E52-80EC-2BC6BDF15349
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fr-free.fastestrelay.com
-  network: ws
-  ws-opts:
-    path: /700gvl
-    headers:
-      Host: fr-free.fastestrelay.com
-- name: 🌐 其他地区 (Other) 09 - hellok
-  type: vless
-  server: 104.27.46.35
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 10 - hellok
   type: vmess
   server: 188.114.96.3
   port: 8443
@@ -149,9 +62,95 @@ proxies:
     path: /lMnsZUN4/
     headers:
       Host: v2ray1.dozapp.xyz
+- name: 🌐 其他地区 (Other) 05 - hellok
+  type: vless
+  server: 104.16.10.104
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 06 - hellok
+  type: vless
+  server: 104.16.111.195
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 07 - hellok
+  type: vless
+  server: 104.21.70.21
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 08 - hellok
+  type: vless
+  server: 104.21.34.106
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 09 - hellok
+  type: vmess
+  server: chatgpt.com
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: v2ray1.dozapp.xyz
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
+- name: 🌐 其他地区 (Other) 10 - hellok
+  type: vless
+  server: 162.159.254.201
+  port: 443
+  uuid: 53bbdad4-2f4e-45db-8df4-fa491a6a7227
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: freeceshi6.frii.site
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM---MARAMBASHI---MARAMBASHI---MARAMBASHI---MARAMBASHI
+    headers:
+      Host: freeceshi6.frii.site
 - name: 🌐 其他地区 (Other) 11 - hellok
   type: vless
-  server: 104.16.111.102
+  server: 104.21.0.87
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -165,7 +164,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 12 - hellok
   type: vless
-  server: 104.21.70.228
+  server: 104.24.31.89
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -179,133 +178,21 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 13 - hellok
   type: vless
-  server: 104.21.219.160
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  server: 172.64.154.113
+  port: 8443
+  uuid: 53bbdad4-2f4e-45db-8df4-fa491a6a7227
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: freeceshi6.frii.site
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
     headers:
-      Host: jp3.yohototo.top
+      Host: freeceshi6.frii.site
 - name: 🌐 其他地区 (Other) 14 - hellok
   type: vless
-  server: 104.16.10.48
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 15 - hellok
-  type: vless
-  server: 104.21.6.186
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 16 - hellok
-  type: vless
-  server: 104.17.50.227
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 17 - hellok
-  type: vless
-  server: 104.24.0.1
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 18 - hellok
-  type: vless
-  server: 104.16.0.1
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 19 - hellok
-  type: vless
-  server: 104.16.10.135
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 20 - hellok
-  type: vless
-  server: 104.16.10.56
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 21 - hellok
-  type: vless
-  server: 172.67.139.189
-  port: 443
-  uuid: 364D2D52-E61E-4E52-80EC-2BC6BDF15349
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fr-free.fastestrelay.com
-  network: ws
-  ws-opts:
-    path: /700gvl
-    headers:
-      Host: fr-free.fastestrelay.com
-- name: 🌐 其他地区 (Other) 22 - hellok
-  type: vless
-  server: 162.159.254.3
+  server: 104.16.111.102
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -336,14 +223,6 @@ proxy-groups:
   - 🌐 其他地区 (Other) 12 - hellok
   - 🌐 其他地区 (Other) 13 - hellok
   - 🌐 其他地区 (Other) 14 - hellok
-  - 🌐 其他地区 (Other) 15 - hellok
-  - 🌐 其他地区 (Other) 16 - hellok
-  - 🌐 其他地区 (Other) 17 - hellok
-  - 🌐 其他地区 (Other) 18 - hellok
-  - 🌐 其他地区 (Other) 19 - hellok
-  - 🌐 其他地区 (Other) 20 - hellok
-  - 🌐 其他地区 (Other) 21 - hellok
-  - 🌐 其他地区 (Other) 22 - hellok
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -363,13 +242,5 @@ proxy-groups:
   - 🌐 其他地区 (Other) 12 - hellok
   - 🌐 其他地区 (Other) 13 - hellok
   - 🌐 其他地区 (Other) 14 - hellok
-  - 🌐 其他地区 (Other) 15 - hellok
-  - 🌐 其他地区 (Other) 16 - hellok
-  - 🌐 其他地区 (Other) 17 - hellok
-  - 🌐 其他地区 (Other) 18 - hellok
-  - 🌐 其他地区 (Other) 19 - hellok
-  - 🌐 其他地区 (Other) 20 - hellok
-  - 🌐 其他地区 (Other) 21 - hellok
-  - 🌐 其他地区 (Other) 22 - hellok
 rules:
 - MATCH,PROXIES
